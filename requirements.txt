@@ -1,0 +1,11 @@
+requests
+chromadb
+sentence-transformers
+transformers
+torch
+fastapi
+uvicorn
+streamlit
+pandas
+scikit-learn
+python-dotenv
