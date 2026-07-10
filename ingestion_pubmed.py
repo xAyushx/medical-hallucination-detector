@@ -17,7 +17,7 @@ CONDITIONS = {
     "diabetes": '"diabetes mellitus"[MeSH Terms]',
     "asthma": '"asthma"[MeSH Terms]',
 }
-
+MIN_CHUNK_LENGTH = 10
 RETMAX_PER_CONDITION = 150
 RELDATE_DAYS = 3650
 BATCH_SIZE = 50
@@ -136,9 +136,13 @@ def fetch_condition(condition: str, query: str, retmax: int) -> list[dict]:
 
 def build_sentence_chunks(records: list[dict]) -> list[dict]:
     chunks = []
+    skipped_short = 0
     for r in records:
         sentences = split_sentences(r["abstract"])
         for idx, sentence in enumerate(sentences):
+            if len(sentence.strip()) < MIN_CHUNK_LENGTH:
+                skipped_short += 1
+                continue
             chunks.append({
                 "chunk_id": f"{r['pmid']}_{idx}",
                 "pmid": r["pmid"],
@@ -146,8 +150,8 @@ def build_sentence_chunks(records: list[dict]) -> list[dict]:
                 "condition": r["condition"],
                 "chunk_text": sentence,
             })
+    print(f"Skipped {skipped_short} chunks under {MIN_CHUNK_LENGTH} chars")
     return chunks
-
 
 def main():
     data_dir = Path(__file__).parent / "data"
