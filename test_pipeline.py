@@ -1,12 +1,9 @@
-import json
-import random
 from src.claim_extractor import extract_claims
 from src.retriever import retrieve
 from src.nli_verifier import verify_claim
 from src.aggregate_result import getresult
-sample="DKD represents a significant microvascular complication associated with type 2 diabetes mellitus (T2DM), markedly elevating the risk of kidney failure, cardiovascular events, and premature mortality."
+sample="Although recent trials have raised questions about its long-term cardiovascular safety, ibuprofen remains one of the most widely used over-the-counter analgesics."
 claims=extract_claims(sample)
-
 
 results = retrieve(claims)
 evidence_list = []
