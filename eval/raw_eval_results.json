@@ -1,0 +1,1902 @@
+[
+  {
+    "id": 1,
+    "claim": "Albuminuria is currently the strongest known predictor for later diabetic nephropathy in people with type 2 diabetes.",
+    "gold_verdict": "SUPPORTED",
+    "gold_source_pmid": "42310331",
+    "nli_results": [
+      {
+        "pmid": "42310331",
+        "distance": 0.17008590698242188,
+        "text": "Currently albuminuria is considered the best predictor of subsequent development of DN in type 2 diabetic patients, but it is often induced by arterial hypertension or heart failure in older patients as well.",
+        "probabilities": {
+          "contradiction": 0.5917423963546753,
+          "entailment": 0.408175528049469,
+          "neutral": 8.203612378565595e-05
+        }
+      },
+      {
+        "pmid": "42150631",
+        "distance": 0.23009908199310303,
+        "text": "Although albuminuria is an established prognostic marker in individuals with diabetes and chronic kidney disease (CKD), less is known about the association between albuminuria and retinal and neurological complications in large, unselected populations with type 2 diabetes and established CKD.",
+        "probabilities": {
+          "contradiction": 0.9988548755645752,
+          "entailment": 0.0011086966842412949,
+          "neutral": 3.6377678043209016e-05
+        }
+      },
+      {
+        "pmid": "41199264",
+        "distance": 0.23972660303115845,
+        "text": "Urinary albumin excretion is an established marker of cardiovascular (CV) risk in people with type 2 diabetes mellitus (T2DM).",
+        "probabilities": {
+          "contradiction": 0.002262667054310441,
+          "entailment": 0.0006026839255355299,
+          "neutral": 0.9971346855163574
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "claim": "Diabetic Kidney Disease (DKD) is one of the most common complications of diabetes.",
+    "gold_verdict": "SUPPORTED",
+    "gold_source_pmid": "42155607",
+    "nli_results": [
+      {
+        "pmid": "42178794",
+        "distance": 0.06527197360992432,
+        "text": "Diabetic kidney disease (DKD) is a common diabetes complication.",
+        "probabilities": {
+          "contradiction": 7.46684308978729e-05,
+          "entailment": 0.9998527765274048,
+          "neutral": 7.253474177559838e-05
+        }
+      },
+      {
+        "pmid": "42178794",
+        "distance": 0.07767808437347412,
+        "text": "Diabetic kidney disease (DKD) is a prevalent complication of diabetes.",
+        "probabilities": {
+          "contradiction": 7.597290823468938e-05,
+          "entailment": 0.9998525381088257,
+          "neutral": 7.149371958803385e-05
+        }
+      },
+      {
+        "pmid": "42178799",
+        "distance": 0.09971225261688232,
+        "text": "Diabetic kidney disease (DKD) is a major and severe complication associated with diabetes.",
+        "probabilities": {
+          "contradiction": 0.0002943121362477541,
+          "entailment": 0.9995577931404114,
+          "neutral": 0.00014783948427066207
+        }
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "claim": "In patients who have received a heart transplant, the presence of Cardiac Allograft Vasculopathy (CAV) and reduced MPR were associated with a poor prognosis and higher risk of adverse events.",
+    "gold_verdict": "SUPPORTED",
+    "gold_source_pmid": "41291299",
+    "nli_results": [
+      {
+        "pmid": "41291299",
+        "distance": 0.12819147109985352,
+        "text": "In heart transplanted patients, the presence of CAV and reduced MPR were associated with a poor prognosis and higher risk of adverse events.",
+        "probabilities": {
+          "contradiction": 0.00047157815424725413,
+          "entailment": 0.9994875192642212,
+          "neutral": 4.08546366088558e-05
+        }
+      },
+      {
+        "pmid": "41740270",
+        "distance": 0.21466535329818726,
+        "text": "Cardiac graft rejection and allograft vasculopathy (CAV) are major causes of morbidity and mortality in heart transplant (HT) patients.",
+        "probabilities": {
+          "contradiction": 0.0004513718013186008,
+          "entailment": 0.9995120763778687,
+          "neutral": 3.6570443626260385e-05
+        }
+      },
+      {
+        "pmid": "41456623",
+        "distance": 0.22543513774871826,
+        "text": "Cardiac allograft vasculopathy (CAV) remains a leading cause of mortality among heart transplant recipients with morbid complications, including graft dysfunction, arrhythmias, and sudden cardiac death.",
+        "probabilities": {
+          "contradiction": 0.00022439009626396,
+          "entailment": 0.9997195601463318,
+          "neutral": 5.6069875427056104e-05
+        }
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "claim": "High platelet group has 59.3% 5 year survival estimate. Normal platelet group has 81.2% 5 year survival estimate. Low platelet group has 67.5% 5 year survival estimate",
+    "gold_verdict": "SUPPORTED",
+    "gold_source_pmid": "41545607",
+    "nli_results": [
+      {
+        "pmid": "41545607",
+        "distance": 0.14988720417022705,
+        "text": "The 5-year survival estimates were 67.5%, 81.2%, and 59.3% for the low, normal, and high platelet count groups, respectively (log-rank, P < 0.001).",
+        "probabilities": {
+          "contradiction": 0.9970577955245972,
+          "entailment": 0.0028614073526114225,
+          "neutral": 8.083125430857763e-05
+        }
+      },
+      {
+        "pmid": "41545607",
+        "distance": 0.2910148501396179,
+        "text": "Similarly, the rate of readmission among patients with normal platelet counts was significantly lower than that in either the high or low platelet count groups (log-rank, P < 0.001).",
+        "probabilities": {
+          "contradiction": 0.9995550513267517,
+          "entailment": 0.00033518130658194423,
+          "neutral": 0.00010971348820021376
+        }
+      },
+      {
+        "pmid": "42008464",
+        "distance": 0.38524019718170166,
+        "text": "Five-year Kaplan-Meier survival was poorest in anemia, with overlapping curves for polycythemia and normocythemia (log-rank p = 0.027).",
+        "probabilities": {
+          "contradiction": 0.9884953498840332,
+          "entailment": 0.0002914565266110003,
+          "neutral": 0.011213229037821293
+        }
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "claim": "A history of COPD-related hospital admissions and diminished exercise tolerance are both significantly linked to RACI.",
+    "gold_verdict": "SUPPORTED",
+    "gold_source_pmid": "41930939",
+    "nli_results": [
+      {
+        "pmid": "41930939",
+        "distance": 0.1317264437675476,
+        "text": "RACI is significantly associated with a history of COPD-related hospitalizations and with reduced exercise capacity.",
+        "probabilities": {
+          "contradiction": 0.0009587157401256263,
+          "entailment": 0.9990057349205017,
+          "neutral": 3.5598466638475657e-05
+        }
+      },
+      {
+        "pmid": "42124032",
+        "distance": 0.31226104497909546,
+        "text": "It is independently associated with increased mortality and reduced exercise capacity.",
+        "probabilities": {
+          "contradiction": 0.00013235595542937517,
+          "entailment": 0.9874695539474487,
+          "neutral": 0.01239815168082714
+        }
+      },
+      {
+        "pmid": "41901612",
+        "distance": 0.3427659273147583,
+        "text": "Conclusions: At diagnosis, COPD was associated with impaired exercise physiology and reduced HRQoL.",
+        "probabilities": {
+          "contradiction": 0.0001340928574791178,
+          "entailment": 0.00029794208239763975,
+          "neutral": 0.9995679259300232
+        }
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "claim": "Ozone rectal insufflation (O3-RI) can improve lung function, reduce the number of inflammatory cells, and alleviate lung tissue inflammation.",
+    "gold_verdict": "SUPPORTED",
+    "gold_source_pmid": "41115352",
+    "nli_results": [
+      {
+        "pmid": "41115352",
+        "distance": 0.1821678876876831,
+        "text": "Ozone rectal insufflation (O3-RI) can improve lung function, reduce the number of inflammatory cells, alleviates lung tissue inflammation, decrease the secretion of proinflammatory cytokines such as Interleukin-4 (IL-4), Interleukin-17A (IL-17A), Tumor Necrosis Factor-alpha (TNF-\u03b1), Interleukin-1 beta (IL-1\u03b2) and Interleukin-6 (IL-6).",
+        "probabilities": {
+          "contradiction": 0.0005471869953908026,
+          "entailment": 0.9994120597839355,
+          "neutral": 4.079381687915884e-05
+        }
+      },
+      {
+        "pmid": "41510885",
+        "distance": 0.2646856904029846,
+        "text": "We found that EEAR inhibited PF, lung inflammation, and airway obstruction, thereby improving lung injury and blood oxygen levels in COPD.",
+        "probabilities": {
+          "contradiction": 0.00024742342066019773,
+          "entailment": 0.9996240139007568,
+          "neutral": 0.00012859732669312507
+        }
+      },
+      {
+        "pmid": "41448367",
+        "distance": 0.31878167390823364,
+        "text": "CP improved pulmonary function, reduced inflammatory cell infiltration, and alleviated airway and alveolar injury.",
+        "probabilities": {
+          "contradiction": 0.0004877630854025483,
+          "entailment": 0.9953057169914246,
+          "neutral": 0.004206474870443344
+        }
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "claim": "Asthma is a widespread chronic inflammatory condition of the airways, with an estimated global prevalence of 300 million cases.",
+    "gold_verdict": "SUPPORTED",
+    "gold_source_pmid": "41513009",
+    "nli_results": [
+      {
+        "pmid": "42312210",
+        "distance": 0.09637230634689331,
+        "text": "Asthma is a chronic inflammatory airway disease with high global prevalence.",
+        "probabilities": {
+          "contradiction": 4.521851224126294e-05,
+          "entailment": 0.9993188381195068,
+          "neutral": 0.0006358750979416072
+        }
+      },
+      {
+        "pmid": "41513009",
+        "distance": 0.10004019737243652,
+        "text": "Asthma, a common chronic inflammatory airway disease, affects 300 million people globally.",
+        "probabilities": {
+          "contradiction": 0.00026704027550294995,
+          "entailment": 0.9996893405914307,
+          "neutral": 4.3645624828059226e-05
+        }
+      },
+      {
+        "pmid": "42189350",
+        "distance": 0.11600291728973389,
+        "text": "Asthma is a heterogeneous chronic inflammatory airway disease affecting over 300 million people worldwide.",
+        "probabilities": {
+          "contradiction": 0.00027448494802229106,
+          "entailment": 0.9996823072433472,
+          "neutral": 4.331673699198291e-05
+        }
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "claim": "Because it interrupts blood flow to neurons, ischemic stroke carries a heavy global burden of disability and death.",
+    "gold_verdict": "SUPPORTED",
+    "gold_source_pmid": "41854729",
+    "nli_results": [
+      {
+        "pmid": "42295478",
+        "distance": 0.1555524468421936,
+        "text": "Ischemic stroke, a major contributor to global disability and mortality, results from the disruption of cerebral blood flow.",
+        "probabilities": {
+          "contradiction": 0.000991242821328342,
+          "entailment": 0.99897301197052,
+          "neutral": 3.577246025088243e-05
+        }
+      },
+      {
+        "pmid": "42254662",
+        "distance": 0.16955411434173584,
+        "text": "Ischemic stroke remains a primary contributor to global disability and mortality, primarily resulting from interruptions in cerebral blood flow that trigger brain tissue necrosis.",
+        "probabilities": {
+          "contradiction": 0.0009843368316069245,
+          "entailment": 0.9989805817604065,
+          "neutral": 3.5065673728240654e-05
+        }
+      },
+      {
+        "pmid": "41854729",
+        "distance": 0.17519360780715942,
+        "text": "Ischemic stroke (IS), as a cerebrovascular disease caused by interrupted blood supply to the neurons, results in a high prevalence of disability and mortality worldwide.",
+        "probabilities": {
+          "contradiction": 0.001547765452414751,
+          "entailment": 0.9984190464019775,
+          "neutral": 3.315940193715505e-05
+        }
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "claim": "Roughly 1 billion people worldwide are affected by Obstructive Sleep Apnea, occurring about twice as often in men as in women.",
+    "gold_verdict": "SUPPORTED",
+    "gold_source_pmid": "42331891",
+    "nli_results": [
+      {
+        "pmid": "42331891",
+        "distance": 0.17843985557556152,
+        "text": "Obstructive Sleep Apnea (OSA) affects 1 billion people globally, with a male-to-female ratio of 2:1.",
+        "probabilities": {
+          "contradiction": 0.0009897688869386911,
+          "entailment": 0.9989699125289917,
+          "neutral": 4.034036101074889e-05
+        }
+      },
+      {
+        "pmid": "41803270",
+        "distance": 0.19494926929473877,
+        "text": "Obstructive sleep apnea (OSA) is a widespread disorder impacting more than one billion individuals globally.",
+        "probabilities": {
+          "contradiction": 4.861601337324828e-05,
+          "entailment": 0.9996625185012817,
+          "neutral": 0.0002888913732022047
+        }
+      },
+      {
+        "pmid": "42284217",
+        "distance": 0.2770031690597534,
+        "text": "Asthma is a chronic respiratory disease affecting over 230 million people worldwide, with higher prevalence in women.",
+        "probabilities": {
+          "contradiction": 0.09919258207082748,
+          "entailment": 0.0026341627817600965,
+          "neutral": 0.8981732726097107
+        }
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "claim": "The interaction between RAGE and DIAPH1 turns on GTPase signaling, leading to cytoskeletal remodeling.",
+    "gold_verdict": "SUPPORTED",
+    "gold_source_pmid": "42346105",
+    "nli_results": [
+      {
+        "pmid": "42346105",
+        "distance": 0.18213725090026855,
+        "text": "RAGE interacts with DIAPH1 to activate GTPase signaling and remodel the cytoskeleton.",
+        "probabilities": {
+          "contradiction": 0.0010278752306476235,
+          "entailment": 0.9989305138587952,
+          "neutral": 4.151084795012139e-05
+        }
+      },
+      {
+        "pmid": "42346105",
+        "distance": 0.32466554641723633,
+        "text": "The RAGE-DIAPH1 interaction provides a plausible route from diabetic ligand accumulation to cytoskeletal remodeling.",
+        "probabilities": {
+          "contradiction": 0.000488333753310144,
+          "entailment": 0.9914113283157349,
+          "neutral": 0.008100299164652824
+        }
+      },
+      {
+        "pmid": "42222933",
+        "distance": 0.48005592823028564,
+        "text": "Arhgef11 is a Rho guanine nucleotide exchange factor involved in the regulation of the cytoskeleton, intracellular trafficking, protein-protein interactions, and transcription factor regulation.",
+        "probabilities": {
+          "contradiction": 0.0003845785104203969,
+          "entailment": 0.9994248151779175,
+          "neutral": 0.00019057343888562173
+        }
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "claim": "Diabetes can cause diabetic foot ulcers, which can even result in amputation.",
+    "gold_verdict": "SUPPORTED",
+    "gold_source_pmid": "42167953",
+    "nli_results": [
+      {
+        "pmid": "42289123",
+        "distance": 0.15243959426879883,
+        "text": "Diabetic foot ulcers (DFUs) are a significant complication of diabetes, frequently leading to limb amputations.",
+        "probabilities": {
+          "contradiction": 0.00022908383107278496,
+          "entailment": 0.9997249245643616,
+          "neutral": 4.598968735081144e-05
+        }
+      },
+      {
+        "pmid": "42397137",
+        "distance": 0.16975605487823486,
+        "text": "Diabetic foot ulcer (DFU) is a serious problem that may cause amputation of the lower extremities in patients with diabetes.",
+        "probabilities": {
+          "contradiction": 0.00015437508409377187,
+          "entailment": 0.9997937083244324,
+          "neutral": 5.192354365135543e-05
+        }
+      },
+      {
+        "pmid": "42310328",
+        "distance": 0.1788696050643921,
+        "text": "Diabetic Foot Ulcers are a severe complication of diabetes that can lead to infection, amputation, and increased mortality, making timely and objective assessment essential.",
+        "probabilities": {
+          "contradiction": 0.0005057547241449356,
+          "entailment": 0.9994515776634216,
+          "neutral": 4.262667061993852e-05
+        }
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "claim": "Because spirometry is underused and often of poor quality, COPD frequently goes undiagnosed.",
+    "gold_verdict": "SUPPORTED",
+    "gold_source_pmid": "41924249",
+    "nli_results": [
+      {
+        "pmid": "41924249",
+        "distance": 0.20547270774841309,
+        "text": "Chronic Obstructive Pulmonary Disease (COPD) is frequently underdiagnosed due to limited use and suboptimal quality of spirometry.",
+        "probabilities": {
+          "contradiction": 0.0008864305564202368,
+          "entailment": 0.9990764856338501,
+          "neutral": 3.70973430108279e-05
+        }
+      },
+      {
+        "pmid": "42262307",
+        "distance": 0.2352195382118225,
+        "text": "People living with COPD are frequently inadequately treated due to underdiagnosis or misdiagnosis.",
+        "probabilities": {
+          "contradiction": 3.77668475266546e-05,
+          "entailment": 0.9996284246444702,
+          "neutral": 0.0003338258247822523
+        }
+      },
+      {
+        "pmid": "41817373",
+        "distance": 0.26750683784484863,
+        "text": "BackgroundAlthough the postbronchodilator FEV1/FVC is the gold standard for diagnosing COPD, it is not easily obtainable due to various reasons.",
+        "probabilities": {
+          "contradiction": 0.00039725343231111765,
+          "entailment": 0.9995436072349548,
+          "neutral": 5.911225889576599e-05
+        }
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "claim": "COPD is linked to impaired diaphragm function along with a decline in overall functional capacity.",
+    "gold_verdict": "SUPPORTED",
+    "gold_source_pmid": "42339648",
+    "nli_results": [
+      {
+        "pmid": "42339648",
+        "distance": 0.20264536142349243,
+        "text": "Chronic Obstructive Pulmonary Disease (COPD) is associated with diaphragm dysfunction and reduced functional capacity.",
+        "probabilities": {
+          "contradiction": 0.00016718848200980574,
+          "entailment": 0.9997850060462952,
+          "neutral": 4.7762954636709765e-05
+        }
+      },
+      {
+        "pmid": "41901612",
+        "distance": 0.24253058433532715,
+        "text": "Conclusions: At diagnosis, COPD was associated with impaired exercise physiology and reduced HRQoL.",
+        "probabilities": {
+          "contradiction": 0.00021830160403624177,
+          "entailment": 0.9997236132621765,
+          "neutral": 5.803424210171215e-05
+        }
+      },
+      {
+        "pmid": "41057104",
+        "distance": 0.26098495721817017,
+        "text": "Sarcopenia in COPD is a measurable, modifiable, and treatable trait linked to worse lung function, physical performance, and outcomes.",
+        "probabilities": {
+          "contradiction": 0.00012223070370964706,
+          "entailment": 0.9997934699058533,
+          "neutral": 8.429009903920814e-05
+        }
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "claim": "Myocardial inflammation and oedema characterize acute myocarditis, an inflammatory condition driven by immune activity.",
+    "gold_verdict": "SUPPORTED",
+    "gold_source_pmid": "41843753",
+    "nli_results": [
+      {
+        "pmid": "41843753",
+        "distance": 0.08089637756347656,
+        "text": "Acute myocarditis is an immune-mediated inflammatory disease characterized by myocardial inflammation and oedema.",
+        "probabilities": {
+          "contradiction": 0.00022972594888415188,
+          "entailment": 0.9997268319129944,
+          "neutral": 4.341249950812198e-05
+        }
+      },
+      {
+        "pmid": "42435150",
+        "distance": 0.3417865037918091,
+        "text": "Myocarditis is an inflammatory disease of the myocardium characterized by complex histological, immunological and molecular changes occur that may ultimately lead to post-viral cardiomyopathy, a specific phenotype of dilated cardiomyopathy and heart failure (HF) after a viral infection.",
+        "probabilities": {
+          "contradiction": 0.0002025468711508438,
+          "entailment": 0.9942604303359985,
+          "neutral": 0.005537036340683699
+        }
+      },
+      {
+        "pmid": "42245002",
+        "distance": 0.3604540228843689,
+        "text": "It is often characterized by unresolved inflammation, adverse cardiac remodeling, and tissue damage.",
+        "probabilities": {
+          "contradiction": 0.0008668283117003739,
+          "entailment": 0.0002892367774620652,
+          "neutral": 0.9988439083099365
+        }
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "claim": "In asthma, bronchoconstriction narrows the airway, compressing the airway epithelium and activating mechanotransduction, yet key regulators of mechanotransduction remain unclear.",
+    "gold_verdict": "SUPPORTED",
+    "gold_source_pmid": "41387449",
+    "nli_results": [
+      {
+        "pmid": "41387449",
+        "distance": -4.76837158203125e-07,
+        "text": "In asthma, bronchoconstriction narrows the airway, compressing the airway epithelium and activating mechanotransduction, yet key regulators of mechanotransduction remain unclear.",
+        "probabilities": {
+          "contradiction": 0.0013279118575155735,
+          "entailment": 0.9986240863800049,
+          "neutral": 4.7926383558660746e-05
+        }
+      },
+      {
+        "pmid": "41707388",
+        "distance": 0.29653555154800415,
+        "text": "Asthma is characterized by airway inflammation and epithelial barrier dysfunction, yet the underlying molecular mechanisms remain incompletely understood.",
+        "probabilities": {
+          "contradiction": 0.001712299883365631,
+          "entailment": 0.9884222149848938,
+          "neutral": 0.009865514002740383
+        }
+      },
+      {
+        "pmid": "41387449",
+        "distance": 0.31781649589538574,
+        "text": "Through secretion of ET-1, a potent bronchoconstrictor, Hic-5 drives epithelial mechanotransduction and promotes a feed-forward cycle of bronchoconstriction, thereby highlighting dysregulated mechanical forces as active drivers of human disease.",
+        "probabilities": {
+          "contradiction": 0.00240139733068645,
+          "entailment": 0.9960005879402161,
+          "neutral": 0.0015979806194081903
+        }
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "claim": "Inhalation therapy forms a central part of standard COPD treatment.",
+    "gold_verdict": "SUPPORTED",
+    "gold_source_pmid": "42216328",
+    "nli_results": [
+      {
+        "pmid": "42216328",
+        "distance": 0.2785365581512451,
+        "text": "A cornerstone of treatment for chronic obstructive pulmonary disease (COPD) is inhalation therapy.",
+        "probabilities": {
+          "contradiction": 0.0006468522478826344,
+          "entailment": 0.9993147850036621,
+          "neutral": 3.840009230771102e-05
+        }
+      },
+      {
+        "pmid": "41333602",
+        "distance": 0.3089444637298584,
+        "text": "Inhalation therapy is the mainstay of pharmacological treatment for patients with chronic obstructive pulmonary disease (COPD).",
+        "probabilities": {
+          "contradiction": 0.001890818472020328,
+          "entailment": 0.9980719089508057,
+          "neutral": 3.718128937180154e-05
+        }
+      },
+      {
+        "pmid": "42320919",
+        "distance": 0.32224082946777344,
+        "text": "Main treatment includes inhaled corticosteroids, often combined with bronchodilators.",
+        "probabilities": {
+          "contradiction": 0.000704658217728138,
+          "entailment": 0.9992521405220032,
+          "neutral": 4.311966768000275e-05
+        }
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "claim": "Exposure to severe heat is linked to a significantly elevated risk of cardiovascular events.",
+    "gold_verdict": "SUPPORTED",
+    "gold_source_pmid": "41990305",
+    "nli_results": [
+      {
+        "pmid": "41990305",
+        "distance": 0.15247118473052979,
+        "text": "However, extreme heat was associated with a significantly increased cardiovascular risk.",
+        "probabilities": {
+          "contradiction": 0.00017868650320451707,
+          "entailment": 0.9997734427452087,
+          "neutral": 4.78844485769514e-05
+        }
+      },
+      {
+        "pmid": "41174568",
+        "distance": 0.31248968839645386,
+        "text": "We found a strong association of heat with morbidity and mortality.",
+        "probabilities": {
+          "contradiction": 0.0006116073927842081,
+          "entailment": 0.8805609941482544,
+          "neutral": 0.11882738769054413
+        }
+      },
+      {
+        "pmid": "41174568",
+        "distance": 0.3163362145423889,
+        "text": "Our findings indicated that chronic diseases are associated with higher vulnerability to adverse health effects due to extreme heat.",
+        "probabilities": {
+          "contradiction": 0.00022711040219292045,
+          "entailment": 0.04841713607311249,
+          "neutral": 0.9513557553291321
+        }
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "claim": "Patients hospitalized with acute decompensated heart failure (ADHF) face high mortality rates and a substantial decline in physical function afterward.",
+    "gold_verdict": "SUPPORTED",
+    "gold_source_pmid": "42086268",
+    "nli_results": [
+      {
+        "pmid": "42086268",
+        "distance": 0.10536801815032959,
+        "text": "Acute decompensated heart failure (ADHF) is associated with high mortality rates and significant decline in physical function following hospitalisation.",
+        "probabilities": {
+          "contradiction": 0.0004358936275821179,
+          "entailment": 0.9995262622833252,
+          "neutral": 3.7931400584056973e-05
+        }
+      },
+      {
+        "pmid": "41711697",
+        "distance": 0.11977499723434448,
+        "text": "Patients hospitalized with acute decompensated heart failure (ADHF) often experience impaired physical function, reduced quality of life (QoL), and loss of independence.",
+        "probabilities": {
+          "contradiction": 0.00013241166016086936,
+          "entailment": 0.007809402421116829,
+          "neutral": 0.9920582175254822
+        }
+      },
+      {
+        "pmid": "41812966",
+        "distance": 0.19172632694244385,
+        "text": "Older patients hospitalized for acute decompensated heart failure with preserved ejection fraction (HFpEF) experience persistently poor outcomes, including physical disability, cognitive impairment, depression, impaired health-related quality of life (HRQOL), rehospitalizations, loss of independence, and mortality.",
+        "probabilities": {
+          "contradiction": 0.00017844425747171044,
+          "entailment": 0.9997510313987732,
+          "neutral": 7.060767529765144e-05
+        }
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "claim": "Individuals who suffered a stroke demonstrated lower white cell counts and elevated protein levels within their cerebrospinal fluid.",
+    "gold_verdict": "SUPPORTED",
+    "gold_source_pmid": "42161222",
+    "nli_results": [
+      {
+        "pmid": "42161222",
+        "distance": 0.13940155506134033,
+        "text": "Stroke cases had lower cerebrospinal fluid white cell counts and higher protein levels.",
+        "probabilities": {
+          "contradiction": 0.0006975178839638829,
+          "entailment": 0.9992641806602478,
+          "neutral": 3.819959965767339e-05
+        }
+      },
+      {
+        "pmid": "42167053",
+        "distance": 0.3881007432937622,
+        "text": "Cerebrospinal fluid (CSF) demonstrated pleocytosis, elevated protein, and increased Bbsl-specific antibodies and CXCL13.",
+        "probabilities": {
+          "contradiction": 0.00171910400968045,
+          "entailment": 0.0001322231109952554,
+          "neutral": 0.9981486797332764
+        }
+      },
+      {
+        "pmid": "41933670",
+        "distance": 0.39298421144485474,
+        "text": "Complementary analysis of cerebrospinal fluid from individuals with ischemic stroke revealed sex-specific increases in soluble TNFR1, elevated across stroke severities in females.",
+        "probabilities": {
+          "contradiction": 0.9991724491119385,
+          "entailment": 0.0007845166837796569,
+          "neutral": 4.3131854909006506e-05
+        }
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "claim": "Roughly 50% of the overall risk of developing coronary artery disease is driven by genetic predisposition.",
+    "gold_verdict": "SUPPORTED",
+    "gold_source_pmid": "42178200",
+    "nli_results": [
+      {
+        "pmid": "42178200",
+        "distance": 0.10532152652740479,
+        "text": "Genetic disposition accounts for about half of the risk to develop coronary artery disease (CAD).",
+        "probabilities": {
+          "contradiction": 0.0027633472345769405,
+          "entailment": 0.9971930384635925,
+          "neutral": 4.360536695457995e-05
+        }
+      },
+      {
+        "pmid": "41593269",
+        "distance": 0.19220280647277832,
+        "text": "Atherosclerotic coronary artery disease (CAD) remains a leading cause of death globally, and individual susceptibility is not fully explained by standard risk factors.",
+        "probabilities": {
+          "contradiction": 0.009725499898195267,
+          "entailment": 0.009148855693638325,
+          "neutral": 0.9811257123947144
+        }
+      },
+      {
+        "pmid": "41513891",
+        "distance": 0.1972968578338623,
+        "text": "Around 50% of the variation in cardiovascular disease (CVD) risk is attributable to heritable factors, and polygenic risk scores (PRS) can now capture part of that genetic component.",
+        "probabilities": {
+          "contradiction": 0.00039746015681885183,
+          "entailment": 0.9995598196983337,
+          "neutral": 4.2609743104549125e-05
+        }
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "claim": "Albuminuria is strongest known predictor for later diabetic nephropathy in people with type 1 diabetes.",
+    "gold_verdict": "REJECTED",
+    "gold_source_pmid": "42310331",
+    "nli_results": [
+      {
+        "pmid": "42310331",
+        "distance": 0.18777334690093994,
+        "text": "Currently albuminuria is considered the best predictor of subsequent development of DN in type 2 diabetic patients, but it is often induced by arterial hypertension or heart failure in older patients as well.",
+        "probabilities": {
+          "contradiction": 0.9967367053031921,
+          "entailment": 0.0032338369637727737,
+          "neutral": 2.9455019102897495e-05
+        }
+      },
+      {
+        "pmid": "42150631",
+        "distance": 0.22996997833251953,
+        "text": "Although albuminuria is an established prognostic marker in individuals with diabetes and chronic kidney disease (CKD), less is known about the association between albuminuria and retinal and neurological complications in large, unselected populations with type 2 diabetes and established CKD.",
+        "probabilities": {
+          "contradiction": 0.9994394183158875,
+          "entailment": 0.00034734077053144574,
+          "neutral": 0.0002132460504071787
+        }
+      },
+      {
+        "pmid": "41199264",
+        "distance": 0.2498626708984375,
+        "text": "Urinary albumin excretion is an established marker of cardiovascular (CV) risk in people with type 2 diabetes mellitus (T2DM).",
+        "probabilities": {
+          "contradiction": 0.061159443110227585,
+          "entailment": 0.00022758850536774844,
+          "neutral": 0.9386129379272461
+        }
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "claim": "Diabetic Kidney Disease (DKD) is a rare complication of diabetes, occurring in only a small minority of patients.",
+    "gold_verdict": "REJECTED",
+    "gold_source_pmid": "42155607",
+    "nli_results": [
+      {
+        "pmid": "42178794",
+        "distance": 0.10071200132369995,
+        "text": "Diabetic kidney disease (DKD) is a common diabetes complication.",
+        "probabilities": {
+          "contradiction": 0.9995672106742859,
+          "entailment": 0.00037613717722706497,
+          "neutral": 5.659366797772236e-05
+        }
+      },
+      {
+        "pmid": "42178794",
+        "distance": 0.12108856439590454,
+        "text": "Diabetic kidney disease (DKD) is a prevalent complication of diabetes.",
+        "probabilities": {
+          "contradiction": 0.9996795654296875,
+          "entailment": 0.0002476761001162231,
+          "neutral": 7.277353142853826e-05
+        }
+      },
+      {
+        "pmid": "42178799",
+        "distance": 0.1325048804283142,
+        "text": "Diabetic kidney disease (DKD) is a major and severe complication associated with diabetes.",
+        "probabilities": {
+          "contradiction": 0.9997164607048035,
+          "entailment": 0.0001765495544532314,
+          "neutral": 0.00010700758139137179
+        }
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "claim": "In heart transplant recipients, the presence of Cardiac Allograft Vasculopathy (CAV) and reduced MPR were associated with a favorable prognosis and lower risk of adverse events.",
+    "gold_verdict": "REJECTED",
+    "gold_source_pmid": "41291299",
+    "nli_results": [
+      {
+        "pmid": "41291299",
+        "distance": 0.15136104822158813,
+        "text": "In heart transplanted patients, the presence of CAV and reduced MPR were associated with a poor prognosis and higher risk of adverse events.",
+        "probabilities": {
+          "contradiction": 0.9989975094795227,
+          "entailment": 0.0009623889345675707,
+          "neutral": 4.008387986687012e-05
+        }
+      },
+      {
+        "pmid": "41740270",
+        "distance": 0.2522091865539551,
+        "text": "Cardiac graft rejection and allograft vasculopathy (CAV) are major causes of morbidity and mortality in heart transplant (HT) patients.",
+        "probabilities": {
+          "contradiction": 0.9995335340499878,
+          "entailment": 0.00038490473525598645,
+          "neutral": 8.158833225024864e-05
+        }
+      },
+      {
+        "pmid": "41456623",
+        "distance": 0.2666895389556885,
+        "text": "Cardiac allograft vasculopathy (CAV) remains a leading cause of mortality among heart transplant recipients with morbid complications, including graft dysfunction, arrhythmias, and sudden cardiac death.",
+        "probabilities": {
+          "contradiction": 0.9994781613349915,
+          "entailment": 0.00046341950655914843,
+          "neutral": 5.8545469073578715e-05
+        }
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "claim": "High platelet group has 59.3% 5 year survival estimate. Normal platelet group has 38.2% 5 year survival estimate. Low platelet group has 67.5% 5 year survival estimate",
+    "gold_verdict": "REJECTED",
+    "gold_source_pmid": "41545607",
+    "nli_results": [
+      {
+        "pmid": "41545607",
+        "distance": 0.15054821968078613,
+        "text": "The 5-year survival estimates were 67.5%, 81.2%, and 59.3% for the low, normal, and high platelet count groups, respectively (log-rank, P < 0.001).",
+        "probabilities": {
+          "contradiction": 0.99791020154953,
+          "entailment": 0.0020075689535588026,
+          "neutral": 8.216698915930465e-05
+        }
+      },
+      {
+        "pmid": "41545607",
+        "distance": 0.28828978538513184,
+        "text": "Similarly, the rate of readmission among patients with normal platelet counts was significantly lower than that in either the high or low platelet count groups (log-rank, P < 0.001).",
+        "probabilities": {
+          "contradiction": 0.9996057152748108,
+          "entailment": 0.0002234834391856566,
+          "neutral": 0.0001708344352664426
+        }
+      },
+      {
+        "pmid": "42008464",
+        "distance": 0.3850315809249878,
+        "text": "Five-year Kaplan-Meier survival was poorest in anemia, with overlapping curves for polycythemia and normocythemia (log-rank p = 0.027).",
+        "probabilities": {
+          "contradiction": 0.9952166080474854,
+          "entailment": 0.0001895076857181266,
+          "neutral": 0.004593954887241125
+        }
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "claim": "RACI shows no significant association with a history of COPD-related hospitalizations and is linked to enhanced exercise capacity.",
+    "gold_verdict": "REJECTED",
+    "gold_source_pmid": "41930939",
+    "nli_results": [
+      {
+        "pmid": "41930939",
+        "distance": 0.0817950963973999,
+        "text": "RACI is significantly associated with a history of COPD-related hospitalizations and with reduced exercise capacity.",
+        "probabilities": {
+          "contradiction": 0.9993683695793152,
+          "entailment": 0.0005790495197288692,
+          "neutral": 5.2670988225145265e-05
+        }
+      },
+      {
+        "pmid": "42124032",
+        "distance": 0.252771258354187,
+        "text": "It is independently associated with increased mortality and reduced exercise capacity.",
+        "probabilities": {
+          "contradiction": 0.9987449645996094,
+          "entailment": 0.0003566356608644128,
+          "neutral": 0.0008983865845948458
+        }
+      },
+      {
+        "pmid": "41555626",
+        "distance": 0.27519893646240234,
+        "text": "Physical activity or radiographic COPD manifestations were not significantly associated with muscle oxidative impairment.",
+        "probabilities": {
+          "contradiction": 0.0005585266626439989,
+          "entailment": 0.8954657912254333,
+          "neutral": 0.10397572815418243
+        }
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "claim": "Ozone rectal insufflation (O3-RI) has been shown to degrade lung function, increase inflammatory cell counts, and aggravate lung tissue inflammation.",
+    "gold_verdict": "REJECTED",
+    "gold_source_pmid": "41115352",
+    "nli_results": [
+      {
+        "pmid": "41115352",
+        "distance": 0.2323840856552124,
+        "text": "Ozone rectal insufflation (O3-RI) can improve lung function, reduce the number of inflammatory cells, alleviates lung tissue inflammation, decrease the secretion of proinflammatory cytokines such as Interleukin-4 (IL-4), Interleukin-17A (IL-17A), Tumor Necrosis Factor-alpha (TNF-\u03b1), Interleukin-1 beta (IL-1\u03b2) and Interleukin-6 (IL-6).",
+        "probabilities": {
+          "contradiction": 0.9995179176330566,
+          "entailment": 0.00014920080138836056,
+          "neutral": 0.00033292677835561335
+        }
+      },
+      {
+        "pmid": "41510885",
+        "distance": 0.3085319399833679,
+        "text": "We found that EEAR inhibited PF, lung inflammation, and airway obstruction, thereby improving lung injury and blood oxygen levels in COPD.",
+        "probabilities": {
+          "contradiction": 0.7329491972923279,
+          "entailment": 0.013675504364073277,
+          "neutral": 0.2533753216266632
+        }
+      },
+      {
+        "pmid": "41160509",
+        "distance": 0.36518406867980957,
+        "text": "Asthma is a respiratory condition that causes lung dysfunction and inflammatory cell infiltration.",
+        "probabilities": {
+          "contradiction": 0.0038265238981693983,
+          "entailment": 0.8726838231086731,
+          "neutral": 0.12348964810371399
+        }
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "claim": "Asthma, a common chronic inflammatory airway disease, affects 30 million people globally.",
+    "gold_verdict": "REJECTED",
+    "gold_source_pmid": "41513009",
+    "nli_results": [
+      {
+        "pmid": "41513009",
+        "distance": 0.014680862426757812,
+        "text": "Asthma, a common chronic inflammatory airway disease, affects 300 million people globally.",
+        "probabilities": {
+          "contradiction": 0.9844890832901001,
+          "entailment": 0.009277291595935822,
+          "neutral": 0.006233589258044958
+        }
+      },
+      {
+        "pmid": "42189350",
+        "distance": 0.059180378913879395,
+        "text": "Asthma is a heterogeneous chronic inflammatory airway disease affecting over 300 million people worldwide.",
+        "probabilities": {
+          "contradiction": 0.2586616575717926,
+          "entailment": 0.6910992860794067,
+          "neutral": 0.05023907124996185
+        }
+      },
+      {
+        "pmid": "41349798",
+        "distance": 0.08185815811157227,
+        "text": "Asthma is a chronic respiratory disease that affects about 300 million people worldwide.",
+        "probabilities": {
+          "contradiction": 0.00016347397468052804,
+          "entailment": 0.9996739625930786,
+          "neutral": 0.00016255209629889578
+        }
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "claim": "Ischemic stroke (IS), as a cerebrovascular disease caused by interrupted blood supply to the neurons, results in a low prevalence of disability and mortality worldwide.",
+    "gold_verdict": "REJECTED",
+    "gold_source_pmid": "41854729",
+    "nli_results": [
+      {
+        "pmid": "41854729",
+        "distance": 0.012755811214447021,
+        "text": "Ischemic stroke (IS), as a cerebrovascular disease caused by interrupted blood supply to the neurons, results in a high prevalence of disability and mortality worldwide.",
+        "probabilities": {
+          "contradiction": 0.9994695782661438,
+          "entailment": 0.0004779827722813934,
+          "neutral": 5.236818105913699e-05
+        }
+      },
+      {
+        "pmid": "42334662",
+        "distance": 0.1326911449432373,
+        "text": "Ischemic stroke, a serious disease that threatens to human health, is caused by insufficient blood supply due to cerebrovascular occlusion, leading to severe brain damage and neurological deficits.",
+        "probabilities": {
+          "contradiction": 0.9954980611801147,
+          "entailment": 0.004471437074244022,
+          "neutral": 3.0448887628153898e-05
+        }
+      },
+      {
+        "pmid": "42295478",
+        "distance": 0.1710820198059082,
+        "text": "Ischemic stroke, a major contributor to global disability and mortality, results from the disruption of cerebral blood flow.",
+        "probabilities": {
+          "contradiction": 0.9992889165878296,
+          "entailment": 0.000666854262817651,
+          "neutral": 4.4184740545460954e-05
+        }
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "claim": "Obstructive Sleep Apnea (OSA) affects 1 billion people globally, with a distinct female-to-male prevalence ratio of 2:1.",
+    "gold_verdict": "REJECTED",
+    "gold_source_pmid": "42331891",
+    "nli_results": [
+      {
+        "pmid": "42331891",
+        "distance": 0.00951772928237915,
+        "text": "Obstructive Sleep Apnea (OSA) affects 1 billion people globally, with a male-to-female ratio of 2:1.",
+        "probabilities": {
+          "contradiction": 0.8209971189498901,
+          "entailment": 0.17887532711029053,
+          "neutral": 0.0001274982641916722
+        }
+      },
+      {
+        "pmid": "41803270",
+        "distance": 0.2059568166732788,
+        "text": "Obstructive sleep apnea (OSA) is a widespread disorder impacting more than one billion individuals globally.",
+        "probabilities": {
+          "contradiction": 0.008645733818411827,
+          "entailment": 0.980408787727356,
+          "neutral": 0.010945419780910015
+        }
+      },
+      {
+        "pmid": "41783427",
+        "distance": 0.30207526683807373,
+        "text": "The proportion of obstructive sleep apnea was comparably high in our study population.",
+        "probabilities": {
+          "contradiction": 0.0005572515074163675,
+          "entailment": 0.0002694771683309227,
+          "neutral": 0.9991732239723206
+        }
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "claim": "RAGE interacts with DIAPH1 to suppress GTPase signaling and stabilize the cytoskeleton.",
+    "gold_verdict": "REJECTED",
+    "gold_source_pmid": "42346105",
+    "nli_results": [
+      {
+        "pmid": "42346105",
+        "distance": 0.04500657320022583,
+        "text": "RAGE interacts with DIAPH1 to activate GTPase signaling and remodel the cytoskeleton.",
+        "probabilities": {
+          "contradiction": 0.9996169805526733,
+          "entailment": 0.0003211201401427388,
+          "neutral": 6.18187477812171e-05
+        }
+      },
+      {
+        "pmid": "42346105",
+        "distance": 0.31837791204452515,
+        "text": "The RAGE-DIAPH1 interaction provides a plausible route from diabetic ligand accumulation to cytoskeletal remodeling.",
+        "probabilities": {
+          "contradiction": 0.9505143761634827,
+          "entailment": 0.04884856939315796,
+          "neutral": 0.0006370144546963274
+        }
+      },
+      {
+        "pmid": "42222933",
+        "distance": 0.42929625511169434,
+        "text": "Arhgef11 is a Rho guanine nucleotide exchange factor involved in the regulation of the cytoskeleton, intracellular trafficking, protein-protein interactions, and transcription factor regulation.",
+        "probabilities": {
+          "contradiction": 0.9956348538398743,
+          "entailment": 0.0006199136842042208,
+          "neutral": 0.0037452438846230507
+        }
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "claim": "Diabetes rarely leads to diabetic foot ulcers and almost never results in amputation.",
+    "gold_verdict": "REJECTED",
+    "gold_source_pmid": "42167953",
+    "nli_results": [
+      {
+        "pmid": "42289123",
+        "distance": 0.203707754611969,
+        "text": "Diabetic foot ulcers (DFUs) are a significant complication of diabetes, frequently leading to limb amputations.",
+        "probabilities": {
+          "contradiction": 0.9997005462646484,
+          "entailment": 0.00018059318244922906,
+          "neutral": 0.00011890534369740635
+        }
+      },
+      {
+        "pmid": "42134618",
+        "distance": 0.23868387937545776,
+        "text": "Delays in early diagnosis of neuropathy can exacerbate the disease, leading to diabetic foot ulcers and ultimately, amputations.",
+        "probabilities": {
+          "contradiction": 0.9996922016143799,
+          "entailment": 0.00021099235164001584,
+          "neutral": 9.691417653812096e-05
+        }
+      },
+      {
+        "pmid": "42310328",
+        "distance": 0.2399669885635376,
+        "text": "Diabetic Foot Ulcers are a severe complication of diabetes that can lead to infection, amputation, and increased mortality, making timely and objective assessment essential.",
+        "probabilities": {
+          "contradiction": 0.999651312828064,
+          "entailment": 0.00023332754790317267,
+          "neutral": 0.00011533610813785344
+        }
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "claim": "Chronic Obstructive Pulmonary Disease (COPD) is frequently overdiagnosed due to limited use and suboptimal quality of spirometry.",
+    "gold_verdict": "REJECTED",
+    "gold_source_pmid": "41924249",
+    "nli_results": [
+      {
+        "pmid": "41924249",
+        "distance": 0.018997907638549805,
+        "text": "Chronic Obstructive Pulmonary Disease (COPD) is frequently underdiagnosed due to limited use and suboptimal quality of spirometry.",
+        "probabilities": {
+          "contradiction": 0.9994286894798279,
+          "entailment": 0.000523517606779933,
+          "neutral": 4.7809724492253736e-05
+        }
+      },
+      {
+        "pmid": "41389529",
+        "distance": 0.11546158790588379,
+        "text": "Chronic obstructive pulmonary disease (COPD), a major global health burden linked to smoking, is frequently underdiagnosed due to low awareness and delayed symptom recognition.",
+        "probabilities": {
+          "contradiction": 0.9982668161392212,
+          "entailment": 0.0016767807537689805,
+          "neutral": 5.6409382523270324e-05
+        }
+      },
+      {
+        "pmid": "42261907",
+        "distance": 0.1405045986175537,
+        "text": "Chronic Obstructive Pulmonary Disease (COPD) remains underdiagnosed and undertreated despite the availability of clinical guidelines.",
+        "probabilities": {
+          "contradiction": 0.9863727688789368,
+          "entailment": 0.013531753793358803,
+          "neutral": 9.551447874400765e-05
+        }
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "claim": "Chronic Obstructive Pulmonary Disease (COPD) is strongly associated with enhanced diaphragm efficiency and an increase in overall functional capacity.",
+    "gold_verdict": "REJECTED",
+    "gold_source_pmid": "42339648",
+    "nli_results": [
+      {
+        "pmid": "42339648",
+        "distance": 0.09337770938873291,
+        "text": "Chronic Obstructive Pulmonary Disease (COPD) is associated with diaphragm dysfunction and reduced functional capacity.",
+        "probabilities": {
+          "contradiction": 0.9996886253356934,
+          "entailment": 0.00020098965615034103,
+          "neutral": 0.00011029784218408167
+        }
+      },
+      {
+        "pmid": "42387971",
+        "distance": 0.17728757858276367,
+        "text": "Chronic obstructive pulmonary disease (COPD) is associated with impaired peripheral muscle oxygenation and reduced exercise tolerance.",
+        "probabilities": {
+          "contradiction": 0.9996917247772217,
+          "entailment": 0.00021869575721211731,
+          "neutral": 8.95746925380081e-05
+        }
+      },
+      {
+        "pmid": "41639421",
+        "distance": 0.1826431155204773,
+        "text": "Chronic obstructive pulmonary disease (COPD) is associated with reduced functional exercise capacity and increased sedentary behavior, both of which worsen prognosis.",
+        "probabilities": {
+          "contradiction": 0.999698281288147,
+          "entailment": 0.00021223153453320265,
+          "neutral": 8.952505595516413e-05
+        }
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "claim": "Acute myocarditis is a purely mechanical disease characterized by myocardial inflammation and oedema.",
+    "gold_verdict": "REJECTED",
+    "gold_source_pmid": "41843753",
+    "nli_results": [
+      {
+        "pmid": "41843753",
+        "distance": 0.15567511320114136,
+        "text": "Acute myocarditis is an immune-mediated inflammatory disease characterized by myocardial inflammation and oedema.",
+        "probabilities": {
+          "contradiction": 0.9995905756950378,
+          "entailment": 0.0001312021049670875,
+          "neutral": 0.0002781840448733419
+        }
+      },
+      {
+        "pmid": "42435150",
+        "distance": 0.29990237951278687,
+        "text": "Myocarditis is an inflammatory disease of the myocardium characterized by complex histological, immunological and molecular changes occur that may ultimately lead to post-viral cardiomyopathy, a specific phenotype of dilated cardiomyopathy and heart failure (HF) after a viral infection.",
+        "probabilities": {
+          "contradiction": 0.9952837824821472,
+          "entailment": 0.0001694221718935296,
+          "neutral": 0.004546798299998045
+        }
+      },
+      {
+        "pmid": "42245002",
+        "distance": 0.3731505870819092,
+        "text": "It is often characterized by unresolved inflammation, adverse cardiac remodeling, and tissue damage.",
+        "probabilities": {
+          "contradiction": 0.002189444378018379,
+          "entailment": 8.411928865825757e-05,
+          "neutral": 0.9977265000343323
+        }
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "claim": "In asthma, bronchoconstriction significantly widens the airway, relieving pressure on the airway epithelium and preventing the activation of mechanotransduction.",
+    "gold_verdict": "REJECTED",
+    "gold_source_pmid": "41387449",
+    "nli_results": [
+      {
+        "pmid": "41387449",
+        "distance": 0.17051559686660767,
+        "text": "In asthma, bronchoconstriction narrows the airway, compressing the airway epithelium and activating mechanotransduction, yet key regulators of mechanotransduction remain unclear.",
+        "probabilities": {
+          "contradiction": 0.9996664524078369,
+          "entailment": 0.00026147719472646713,
+          "neutral": 7.207038288470358e-05
+        }
+      },
+      {
+        "pmid": "41597277",
+        "distance": 0.32870614528656006,
+        "text": "We discuss the mechanisms by which ASM mediates AHR, increases airway thickness, and contributes to AR.",
+        "probabilities": {
+          "contradiction": 0.9975075721740723,
+          "entailment": 0.002078078221529722,
+          "neutral": 0.00041424864321015775
+        }
+      },
+      {
+        "pmid": "41137865",
+        "distance": 0.329278826713562,
+        "text": "Upon exposure to allergens, mast cells actively release histamine into the airway, forcing the smooth muscles in the airway to undergo contraction, hence asthmatic attack.",
+        "probabilities": {
+          "contradiction": 0.9994944334030151,
+          "entailment": 0.00028729665791615844,
+          "neutral": 0.00021826881857123226
+        }
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "claim": "Inhalation therapy plays only a minor, supplementary role in the standard treatment protocol for chronic obstructive pulmonary disease (COPD).",
+    "gold_verdict": "REJECTED",
+    "gold_source_pmid": "42216328",
+    "nli_results": [
+      {
+        "pmid": "42216328",
+        "distance": 0.14273524284362793,
+        "text": "A cornerstone of treatment for chronic obstructive pulmonary disease (COPD) is inhalation therapy.",
+        "probabilities": {
+          "contradiction": 0.9989504814147949,
+          "entailment": 0.001007639104500413,
+          "neutral": 4.174447894911282e-05
+        }
+      },
+      {
+        "pmid": "41333602",
+        "distance": 0.15853780508041382,
+        "text": "Inhalation therapy is the mainstay of pharmacological treatment for patients with chronic obstructive pulmonary disease (COPD).",
+        "probabilities": {
+          "contradiction": 0.9988225102424622,
+          "entailment": 0.0011331181740388274,
+          "neutral": 4.44068391516339e-05
+        }
+      },
+      {
+        "pmid": "41051742",
+        "distance": 0.18875515460968018,
+        "text": "Inhalers are the primary treatment modality for asthma and chronic obstructive pulmonary disease (COPD).",
+        "probabilities": {
+          "contradiction": 0.9980635046958923,
+          "entailment": 0.0018965780036523938,
+          "neutral": 3.9810089219827205e-05
+        }
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "claim": "Exposure to severe environmental heat is linked to a significantly decreased risk of acute cardiovascular events.",
+    "gold_verdict": "REJECTED",
+    "gold_source_pmid": "41990305",
+    "nli_results": [
+      {
+        "pmid": "41990305",
+        "distance": 0.16597908735275269,
+        "text": "However, extreme heat was associated with a significantly increased cardiovascular risk.",
+        "probabilities": {
+          "contradiction": 0.9952921867370605,
+          "entailment": 0.004659971687942743,
+          "neutral": 4.786511271959171e-05
+        }
+      },
+      {
+        "pmid": "41990305",
+        "distance": 0.312008261680603,
+        "text": "Summer was associated with a lower risk of adverse cardiovascular events compared with winter in patients with AF living in heat-adapted cities.",
+        "probabilities": {
+          "contradiction": 0.00010614712664391845,
+          "entailment": 0.9998225569725037,
+          "neutral": 7.126204582164064e-05
+        }
+      },
+      {
+        "pmid": "41956177",
+        "distance": 0.33065861463546753,
+        "text": "Climate change-related worsening air quality and temperature extremes are linked to increased incidence of stroke.",
+        "probabilities": {
+          "contradiction": 0.9985382556915283,
+          "entailment": 0.00141724303830415,
+          "neutral": 4.447039100341499e-05
+        }
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "claim": "Patients hospitalized with acute decompensated heart failure (ADHF) face low mortality rates and a substantial decline in physical function afterward.",
+    "gold_verdict": "REJECTED",
+    "gold_source_pmid": "42086268",
+    "nli_results": [
+      {
+        "pmid": "42086268",
+        "distance": 0.10965943336486816,
+        "text": "Acute decompensated heart failure (ADHF) is associated with high mortality rates and significant decline in physical function following hospitalisation.",
+        "probabilities": {
+          "contradiction": 0.9990012049674988,
+          "entailment": 0.0009530730894766748,
+          "neutral": 4.572717807604931e-05
+        }
+      },
+      {
+        "pmid": "41711697",
+        "distance": 0.13045841455459595,
+        "text": "Patients hospitalized with acute decompensated heart failure (ADHF) often experience impaired physical function, reduced quality of life (QoL), and loss of independence.",
+        "probabilities": {
+          "contradiction": 0.0004850923432968557,
+          "entailment": 0.7959191203117371,
+          "neutral": 0.20359571278095245
+        }
+      },
+      {
+        "pmid": "41812966",
+        "distance": 0.1922205686569214,
+        "text": "Older patients hospitalized for acute decompensated heart failure with preserved ejection fraction (HFpEF) experience persistently poor outcomes, including physical disability, cognitive impairment, depression, impaired health-related quality of life (HRQOL), rehospitalizations, loss of independence, and mortality.",
+        "probabilities": {
+          "contradiction": 0.03035947121679783,
+          "entailment": 0.96939617395401,
+          "neutral": 0.00024425852461718023
+        }
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "claim": "Individuals who suffered a stroke demonstrated elevated white cell counts and elevated protein levels within their cerebrospinal fluid.",
+    "gold_verdict": "REJECTED",
+    "gold_source_pmid": "42161222",
+    "nli_results": [
+      {
+        "pmid": "42161222",
+        "distance": 0.19672465324401855,
+        "text": "Stroke cases had lower cerebrospinal fluid white cell counts and higher protein levels.",
+        "probabilities": {
+          "contradiction": 0.9964157342910767,
+          "entailment": 0.0035515674389898777,
+          "neutral": 3.263170947320759e-05
+        }
+      },
+      {
+        "pmid": "42167053",
+        "distance": 0.35256582498550415,
+        "text": "Cerebrospinal fluid (CSF) demonstrated pleocytosis, elevated protein, and increased Bbsl-specific antibodies and CXCL13.",
+        "probabilities": {
+          "contradiction": 0.0002173183747800067,
+          "entailment": 0.0001739434082992375,
+          "neutral": 0.9996088147163391
+        }
+      },
+      {
+        "pmid": "41933060",
+        "distance": 0.40379828214645386,
+        "text": "Plasma brain natriuretic peptide levels were also elevated.",
+        "probabilities": {
+          "contradiction": 0.0006285663112066686,
+          "entailment": 8.52753801154904e-05,
+          "neutral": 0.9992862343788147
+        }
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "claim": "Roughly 15% of the overall risk of developing coronary artery disease is driven by genetic predisposition.",
+    "gold_verdict": "REJECTED",
+    "gold_source_pmid": "42178200",
+    "nli_results": [
+      {
+        "pmid": "42178200",
+        "distance": 0.11030828952789307,
+        "text": "Genetic disposition accounts for about half of the risk to develop coronary artery disease (CAD).",
+        "probabilities": {
+          "contradiction": 0.006739347241818905,
+          "entailment": 0.9931740164756775,
+          "neutral": 8.662112668389454e-05
+        }
+      },
+      {
+        "pmid": "41593269",
+        "distance": 0.20119959115982056,
+        "text": "Atherosclerotic coronary artery disease (CAD) remains a leading cause of death globally, and individual susceptibility is not fully explained by standard risk factors.",
+        "probabilities": {
+          "contradiction": 0.004359980579465628,
+          "entailment": 0.0165406446903944,
+          "neutral": 0.9790993332862854
+        }
+      },
+      {
+        "pmid": "41513891",
+        "distance": 0.2045099139213562,
+        "text": "Around 50% of the variation in cardiovascular disease (CVD) risk is attributable to heritable factors, and polygenic risk scores (PRS) can now capture part of that genetic component.",
+        "probabilities": {
+          "contradiction": 0.8854110240936279,
+          "entailment": 0.11401429027318954,
+          "neutral": 0.0005747018731199205
+        }
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "claim": "Chronic constipation and prolonged straining during bowel movements are major mechanical risk factors for the development and exacerbation of hemorrhoids.",
+    "gold_verdict": "NOT_ENOUGH_INFO",
+    "gold_source_pmid": null,
+    "nli_results": [
+      {
+        "pmid": "41431647",
+        "distance": 0.5219526886940002,
+        "text": "Functional abdominal bloating/distension (FABD), a functional gastrointestinal disorder characterized by recurrent sensations of abdominal fullness and/or visible abdominal distension without identifiable organic causes.",
+        "probabilities": {
+          "contradiction": 0.0003977150481659919,
+          "entailment": 0.00011410287697799504,
+          "neutral": 0.999488115310669
+        }
+      },
+      {
+        "pmid": "42264841",
+        "distance": 0.5242295265197754,
+        "text": "Constipation is one of the most prevalent gastrointestinal issues faced by diabetic patients.",
+        "probabilities": {
+          "contradiction": 0.0004667060566134751,
+          "entailment": 0.00030807609437033534,
+          "neutral": 0.9992252588272095
+        }
+      },
+      {
+        "pmid": "42388868",
+        "distance": 0.5506256818771362,
+        "text": "Insufficient physical activity and sleep disorders are both known risk factors for metabolic disorders.",
+        "probabilities": {
+          "contradiction": 0.0003999431210104376,
+          "entailment": 6.625537207582965e-05,
+          "neutral": 0.9995337724685669
+        }
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "claim": "Abruptly discontinuing long-term systemic steroid use can trigger potentially life-threatening acute adrenal insufficiency due to HPA axis suppression.",
+    "gold_verdict": "NOT_ENOUGH_INFO",
+    "gold_source_pmid": null,
+    "nli_results": [
+      {
+        "pmid": "41393182",
+        "distance": 0.32766151428222656,
+        "text": "Severe asthma is a chronic condition that often requires oral corticosteroid (OCS) therapy, which, when prolonged, may lead to significant adverse effects, including secondary adrenal insufficiency.",
+        "probabilities": {
+          "contradiction": 0.0004085185646545142,
+          "entailment": 0.9993665814399719,
+          "neutral": 0.00022492995776701719
+        }
+      },
+      {
+        "pmid": "41084036",
+        "distance": 0.4113788604736328,
+        "text": "Steroid-induced allergic reactions, although rare, can lead to life-threatening conditions such as anaphylaxis, as illustrated in this case.",
+        "probabilities": {
+          "contradiction": 0.0005072124768048525,
+          "entailment": 0.0001642736024223268,
+          "neutral": 0.9993284940719604
+        }
+      },
+      {
+        "pmid": "41740847",
+        "distance": 0.41392838954925537,
+        "text": "A proportion of patients with SA withdrawing from mOCS will have persistent adrenal insufficiency.",
+        "probabilities": {
+          "contradiction": 0.0009638521587476134,
+          "entailment": 0.9608121514320374,
+          "neutral": 0.03822397068142891
+        }
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "claim": "When the lower spinal canal narrows, it often causes noticeable leg pain while walking.",
+    "gold_verdict": "NOT_ENOUGH_INFO",
+    "gold_source_pmid": null,
+    "nli_results": [
+      {
+        "pmid": "42216594",
+        "distance": 0.44131046533584595,
+        "text": "Knee hyperextension during walking is a common clinical concern in stroke patients that worsens lower limb dysfunction and reduces quality of life.",
+        "probabilities": {
+          "contradiction": 0.0005727338138967752,
+          "entailment": 0.033339645713567734,
+          "neutral": 0.9660875797271729
+        }
+      },
+      {
+        "pmid": "42163441",
+        "distance": 0.4497755169868469,
+        "text": "CONCLUSIONS This case emphasizes that a thoracic sensory level with fever and preserved consciousness should prompt early spinal MRI.",
+        "probabilities": {
+          "contradiction": 0.001062853028997779,
+          "entailment": 0.00012712698662653565,
+          "neutral": 0.9988100528717041
+        }
+      },
+      {
+        "pmid": "42431646",
+        "distance": 0.4506072998046875,
+        "text": "It causes severe pain, dysesthesia, and allodynia initially; with disease progression, it kills the nerve, leading to full anaesthesia, accidental feet, leg ulceration, diabetic foot, and amputation.",
+        "probabilities": {
+          "contradiction": 0.0006387425819411874,
+          "entailment": 0.00904383696615696,
+          "neutral": 0.9903173446655273
+        }
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "claim": "Teeth cavities form when bacteria in the mouth turn sugar into acid that damages the tooth.",
+    "gold_verdict": "NOT_ENOUGH_INFO",
+    "gold_source_pmid": null,
+    "nli_results": [
+      {
+        "pmid": "41387831",
+        "distance": 0.3923231363296509,
+        "text": "Dry oral mucosa makes it difficult for food to slide and chew in the mouth.",
+        "probabilities": {
+          "contradiction": 0.0009908992797136307,
+          "entailment": 0.0007755296537652612,
+          "neutral": 0.9982335567474365
+        }
+      },
+      {
+        "pmid": "42148579",
+        "distance": 0.48995232582092285,
+        "text": "Lung microbiota largely originates from the oral cavity but is changed in COPD.",
+        "probabilities": {
+          "contradiction": 0.0005006151041015983,
+          "entailment": 0.0013666314771398902,
+          "neutral": 0.9981327652931213
+        }
+      },
+      {
+        "pmid": "41588357",
+        "distance": 0.5099889039993286,
+        "text": "The composition of oral microbiota is linked to asthma, as well as to the development of caries and other oral conditions.",
+        "probabilities": {
+          "contradiction": 9.517517173662782e-05,
+          "entailment": 0.9993507266044617,
+          "neutral": 0.0005541341961361468
+        }
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "claim": "Cerebral palsy is a lifelong condition caused by early brain damage that impacts a person's movement and muscle control.",
+    "gold_verdict": "NOT_ENOUGH_INFO",
+    "gold_source_pmid": null,
+    "nli_results": [
+      {
+        "pmid": "42160369",
+        "distance": 0.3549227714538574,
+        "text": "Stroke often causes spasticity, impacting mobility and quality of life.",
+        "probabilities": {
+          "contradiction": 0.0020155145321041346,
+          "entailment": 0.02231910079717636,
+          "neutral": 0.9756653904914856
+        }
+      },
+      {
+        "pmid": "42154780",
+        "distance": 0.35862892866134644,
+        "text": "However, one's ability to effectively implement these proactive control strategies may be impaired after a stroke due to a combination of motor and cognitive impairments that result from brain lesions.",
+        "probabilities": {
+          "contradiction": 0.0009173227590508759,
+          "entailment": 0.5619551539421082,
+          "neutral": 0.4371275305747986
+        }
+      },
+      {
+        "pmid": "41964055",
+        "distance": 0.3681142330169678,
+        "text": "BACKGROUND: Impaired trunk control is a critical contributor to poststroke disability, as it undermines balance, mobility, and independence.",
+        "probabilities": {
+          "contradiction": 0.0011482065310701728,
+          "entailment": 0.0002497908426448703,
+          "neutral": 0.9986019730567932
+        }
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "claim": "Down syndrome is a genetic condition caused by having an extra copy of chromosome 21, which affects how a child develops.",
+    "gold_verdict": "NOT_ENOUGH_INFO",
+    "gold_source_pmid": null,
+    "nli_results": [
+      {
+        "pmid": "42253980",
+        "distance": 0.32451164722442627,
+        "text": "Trisomy 21 (T21) results in Down syndrome (DS), a condition associated with a high prevalence of pulmonary complications.",
+        "probabilities": {
+          "contradiction": 0.0001029363993438892,
+          "entailment": 0.9998313188552856,
+          "neutral": 6.561707414221019e-05
+        }
+      },
+      {
+        "pmid": "41987093",
+        "distance": 0.342441201210022,
+        "text": "BACKGROUND: Chromosome 17q23.1-q23.2 deletion syndrome is a rare genetic disorder characterized by various congenital defects, including microcephaly, heart and lung defects, limb abnormalities, and mild-to-severe developmental delay.",
+        "probabilities": {
+          "contradiction": 0.0002644215419422835,
+          "entailment": 0.9995552897453308,
+          "neutral": 0.00018025054305326194
+        }
+      },
+      {
+        "pmid": "41947226",
+        "distance": 0.44546937942504883,
+        "text": "Trisomy 9 mosaicism is often incompatible with life and typically involves multiple congenital anomalies, especially affecting the limbs, craniofacial features, nervous system, and cardiovascular system.",
+        "probabilities": {
+          "contradiction": 0.00014935946092009544,
+          "entailment": 0.9997652173042297,
+          "neutral": 8.545688615413383e-05
+        }
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "claim": "An ingrown hair occurs when a hair curls back or grows sideways into the skin, frequently resulting in localized inflammation, pain, and the formation of small, itchy bumps.",
+    "gold_verdict": "NOT_ENOUGH_INFO",
+    "gold_source_pmid": null,
+    "nli_results": [
+      {
+        "pmid": "42430054",
+        "distance": 0.48195457458496094,
+        "text": "Improvements were observed in selected symptoms, including numbness, cramps, and dry skin with fissures.",
+        "probabilities": {
+          "contradiction": 0.008659308776259422,
+          "entailment": 0.9720058441162109,
+          "neutral": 0.019334744662046432
+        }
+      },
+      {
+        "pmid": "42180627",
+        "distance": 0.5120904445648193,
+        "text": "Even though it is uncommon, patients who present with sudden-onset ear pain, bleeding, and a crawling sensation should be evaluated for aural myiasis, particularly in areas where it is endemic.",
+        "probabilities": {
+          "contradiction": 0.00017975756782107055,
+          "entailment": 0.9997462630271912,
+          "neutral": 7.403136987704784e-05
+        }
+      },
+      {
+        "pmid": "41503746",
+        "distance": 0.5191947221755981,
+        "text": "Atopic dermatitis (AD) is a chronic, itchy skin disease that often begins in infancy and may persist into adulthood.",
+        "probabilities": {
+          "contradiction": 0.0019035552395507693,
+          "entailment": 0.7982291579246521,
+          "neutral": 0.1998671591281891
+        }
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "claim": "Sexually transmitted diseases often present no noticeable symptoms in their early stages, frequently leading to undiagnosed infections and unintended transmission.",
+    "gold_verdict": "NOT_ENOUGH_INFO",
+    "gold_source_pmid": null,
+    "nli_results": [
+      {
+        "pmid": "42233813",
+        "distance": 0.4350694417953491,
+        "text": "Women often present with underrecognized stroke symptoms, which can lead to diagnostic delays and missed opportunities for timely intervention.",
+        "probabilities": {
+          "contradiction": 0.000564287300221622,
+          "entailment": 0.017138471826910973,
+          "neutral": 0.9822972416877747
+        }
+      },
+      {
+        "pmid": "42240320",
+        "distance": 0.46356111764907837,
+        "text": "Early stages often have no symptoms, making early detection important for prevention.",
+        "probabilities": {
+          "contradiction": 0.0001762478204909712,
+          "entailment": 0.014147290959954262,
+          "neutral": 0.9856764078140259
+        }
+      },
+      {
+        "pmid": "42298424",
+        "distance": 0.4647788405418396,
+        "text": "Its nonspecific symptoms often lead to delayed diagnosis and suboptimal management.",
+        "probabilities": {
+          "contradiction": 0.001173097174614668,
+          "entailment": 0.37093204259872437,
+          "neutral": 0.6278948783874512
+        }
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "claim": "Achieving a high degree of HLA matching between a donor and recipient is critical in bone marrow transplantation to prevent life-threatening graft-versus-host disease.",
+    "gold_verdict": "NOT_ENOUGH_INFO",
+    "gold_source_pmid": null,
+    "nli_results": [
+      {
+        "pmid": "41646845",
+        "distance": 0.32039451599121094,
+        "text": "The development of human leukocyte antigen (HLA) antibodies poses a major challenge in transplantation by limiting donor compatibility and increasing the risk of graft failure.",
+        "probabilities": {
+          "contradiction": 0.9912623167037964,
+          "entailment": 0.008588950149714947,
+          "neutral": 0.00014871556777507067
+        }
+      },
+      {
+        "pmid": "41983596",
+        "distance": 0.45121264457702637,
+        "text": "Heart transplantation (HTx) remains the gold standard therapy, although its availability is constrained by the lack of donors and strict allocation criteria.",
+        "probabilities": {
+          "contradiction": 0.0008071021875366569,
+          "entailment": 0.00015376564988400787,
+          "neutral": 0.9990391731262207
+        }
+      },
+      {
+        "pmid": "41212178",
+        "distance": 0.46966415643692017,
+        "text": "Cardiac allograft vasculopathy is an important cause of mortality after heart transplantation (HT).",
+        "probabilities": {
+          "contradiction": 0.0005149920471012592,
+          "entailment": 8.705264190211892e-05,
+          "neutral": 0.9993979930877686
+        }
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "claim": "Impacted wisdom teeth that fail to fully emerge through the gums can cause pain, swelling, and misalignment of nearby teeth.",
+    "gold_verdict": "NOT_ENOUGH_INFO",
+    "gold_source_pmid": null,
+    "nli_results": [
+      {
+        "pmid": "41387831",
+        "distance": 0.4128710627555847,
+        "text": "Tooth loss or gum disease can affect chewing and occlusal functions, causing difficulty in swallowing during meals for such patients and increasing the risk of difficulty in swallowing.",
+        "probabilities": {
+          "contradiction": 0.00017004138499032706,
+          "entailment": 0.003977952525019646,
+          "neutral": 0.995851993560791
+        }
+      },
+      {
+        "pmid": "41387831",
+        "distance": 0.4767373204231262,
+        "text": "Dry oral mucosa makes it difficult for food to slide and chew in the mouth.",
+        "probabilities": {
+          "contradiction": 0.003965866751968861,
+          "entailment": 0.6001664400100708,
+          "neutral": 0.3958677351474762
+        }
+      },
+      {
+        "pmid": "42143765",
+        "distance": 0.49317002296447754,
+        "text": "In women, fewer remaining teeth were associated with higher odds of uncontrolled diabetes (per 1-tooth increase OR 0.961, 95% CI 0.937-0.986; p = 0.002), and compared with \u2265 28 teeth, OR were higher in the 0-19 teeth (OR 2.500, 95% CI 1.535-4.074) and the 20-27 teeth (OR 1.679, 95% CI 1.073-2.629) (all p = 0.002).",
+        "probabilities": {
+          "contradiction": 0.053549688309431076,
+          "entailment": 0.7249571681022644,
+          "neutral": 0.22149312496185303
+        }
+      }
+    ]
+  }
+]
