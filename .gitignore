@@ -13,3 +13,4 @@ tempCodeRunnerFile.py
 *.bin
 *.pickle
 *.sqlite3
+.streamlit
