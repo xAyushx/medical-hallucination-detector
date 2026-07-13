@@ -214,7 +214,6 @@ def build_sentence_chunks(records: list[dict]) -> list[dict]:
     print(f"Skipped {skipped_short} chunks under {MIN_WORDS} words")
     return chunks
 
-
 def main():
     data_dir = Path(__file__).parent.parent / "data"  
     data_dir.mkdir(exist_ok=True)
