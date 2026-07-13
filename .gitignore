@@ -14,3 +14,4 @@ tempCodeRunnerFile.py
 *.pickle
 *.sqlite3
 .streamlit
+data/
