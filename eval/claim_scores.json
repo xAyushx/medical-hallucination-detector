@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "claim": "Albuminuria is currently the strongest known predictor for later diabetic nephropathy in people with type 2 diabetes.",
+    "gold_verdict": "SUPPORTED",
+    "rank1_distance": 0.17008590698242188,
+    "best_contradiction": 0.9988548755645752,
+    "best_entailment": 0.408175528049469
+  },
+  {
+    "id": 2,
+    "claim": "Diabetic Kidney Disease (DKD) is one of the most common complications of diabetes.",
+    "gold_verdict": "SUPPORTED",
+    "rank1_distance": 0.06527197360992432,
+    "best_contradiction": 0.0002943121362477541,
+    "best_entailment": 0.9998527765274048
+  },
+  {
+    "id": 3,
+    "claim": "In patients who have received a heart transplant, the presence of Cardiac Allograft Vasculopathy (CAV) and reduced MPR were associated with a poor prognosis and higher risk of adverse events.",
+    "gold_verdict": "SUPPORTED",
+    "rank1_distance": 0.12819147109985352,
+    "best_contradiction": 0.00047157815424725413,
+    "best_entailment": 0.9997195601463318
+  },
+  {
+    "id": 4,
+    "claim": "High platelet group has 59.3% 5 year survival estimate. Normal platelet group has 81.2% 5 year survival estimate. Low platelet group has 67.5% 5 year survival estimate",
+    "gold_verdict": "SUPPORTED",
+    "rank1_distance": 0.14988720417022705,
+    "best_contradiction": 0.9995550513267517,
+    "best_entailment": 0.0028614073526114225
+  },
+  {
+    "id": 5,
+    "claim": "A history of COPD-related hospital admissions and diminished exercise tolerance are both significantly linked to RACI.",
+    "gold_verdict": "SUPPORTED",
+    "rank1_distance": 0.1317264437675476,
+    "best_contradiction": 0.0009587157401256263,
+    "best_entailment": 0.9990057349205017
+  },
+  {
+    "id": 6,
+    "claim": "Ozone rectal insufflation (O3-RI) can improve lung function, reduce the number of inflammatory cells, and alleviate lung tissue inflammation.",
+    "gold_verdict": "SUPPORTED",
+    "rank1_distance": 0.1821678876876831,
+    "best_contradiction": 0.0005471869953908026,
+    "best_entailment": 0.9996240139007568
+  },
+  {
+    "id": 7,
+    "claim": "Asthma is a widespread chronic inflammatory condition of the airways, with an estimated global prevalence of 300 million cases.",
+    "gold_verdict": "SUPPORTED",
+    "rank1_distance": 0.09637230634689331,
+    "best_contradiction": 0.00027448494802229106,
+    "best_entailment": 0.9996893405914307
+  },
+  {
+    "id": 8,
+    "claim": "Because it interrupts blood flow to neurons, ischemic stroke carries a heavy global burden of disability and death.",
+    "gold_verdict": "SUPPORTED",
+    "rank1_distance": 0.1555524468421936,
+    "best_contradiction": 0.001547765452414751,
+    "best_entailment": 0.9989805817604065
+  },
+  {
+    "id": 9,
+    "claim": "Roughly 1 billion people worldwide are affected by Obstructive Sleep Apnea, occurring about twice as often in men as in women.",
+    "gold_verdict": "SUPPORTED",
+    "rank1_distance": 0.17843985557556152,
+    "best_contradiction": 0.09919258207082748,
+    "best_entailment": 0.9996625185012817
+  },
+  {
+    "id": 10,
+    "claim": "The interaction between RAGE and DIAPH1 turns on GTPase signaling, leading to cytoskeletal remodeling.",
+    "gold_verdict": "SUPPORTED",
+    "rank1_distance": 0.18213725090026855,
+    "best_contradiction": 0.0010278752306476235,
+    "best_entailment": 0.9994248151779175
+  },
+  {
+    "id": 11,
+    "claim": "Diabetes can cause diabetic foot ulcers, which can even result in amputation.",
+    "gold_verdict": "SUPPORTED",
+    "rank1_distance": 0.15243959426879883,
+    "best_contradiction": 0.0005057547241449356,
+    "best_entailment": 0.9997937083244324
+  },
+  {
+    "id": 12,
+    "claim": "Because spirometry is underused and often of poor quality, COPD frequently goes undiagnosed.",
+    "gold_verdict": "SUPPORTED",
+    "rank1_distance": 0.20547270774841309,
+    "best_contradiction": 0.0008864305564202368,
+    "best_entailment": 0.9996284246444702
+  },
+  {
+    "id": 13,
+    "claim": "COPD is linked to impaired diaphragm function along with a decline in overall functional capacity.",
+    "gold_verdict": "SUPPORTED",
+    "rank1_distance": 0.20264536142349243,
+    "best_contradiction": 0.00021830160403624177,
+    "best_entailment": 0.9997934699058533
+  },
+  {
+    "id": 14,
+    "claim": "Myocardial inflammation and oedema characterize acute myocarditis, an inflammatory condition driven by immune activity.",
+    "gold_verdict": "SUPPORTED",
+    "rank1_distance": 0.08089637756347656,
+    "best_contradiction": 0.0008668283117003739,
+    "best_entailment": 0.9997268319129944
+  },
+  {
+    "id": 15,
+    "claim": "In asthma, bronchoconstriction narrows the airway, compressing the airway epithelium and activating mechanotransduction, yet key regulators of mechanotransduction remain unclear.",
+    "gold_verdict": "SUPPORTED",
+    "rank1_distance": -4.76837158203125e-07,
+    "best_contradiction": 0.00240139733068645,
+    "best_entailment": 0.9986240863800049
+  },
+  {
+    "id": 16,
+    "claim": "Inhalation therapy forms a central part of standard COPD treatment.",
+    "gold_verdict": "SUPPORTED",
+    "rank1_distance": 0.2785365581512451,
+    "best_contradiction": 0.001890818472020328,
+    "best_entailment": 0.9993147850036621
+  },
+  {
+    "id": 17,
+    "claim": "Exposure to severe heat is linked to a significantly elevated risk of cardiovascular events.",
+    "gold_verdict": "SUPPORTED",
+    "rank1_distance": 0.15247118473052979,
+    "best_contradiction": 0.0006116073927842081,
+    "best_entailment": 0.9997734427452087
+  },
+  {
+    "id": 18,
+    "claim": "Patients hospitalized with acute decompensated heart failure (ADHF) face high mortality rates and a substantial decline in physical function afterward.",
+    "gold_verdict": "SUPPORTED",
+    "rank1_distance": 0.10536801815032959,
+    "best_contradiction": 0.0004358936275821179,
+    "best_entailment": 0.9997510313987732
+  },
+  {
+    "id": 19,
+    "claim": "Individuals who suffered a stroke demonstrated lower white cell counts and elevated protein levels within their cerebrospinal fluid.",
+    "gold_verdict": "SUPPORTED",
+    "rank1_distance": 0.13940155506134033,
+    "best_contradiction": 0.9991724491119385,
+    "best_entailment": 0.9992641806602478
+  },
+  {
+    "id": 20,
+    "claim": "Roughly 50% of the overall risk of developing coronary artery disease is driven by genetic predisposition.",
+    "gold_verdict": "SUPPORTED",
+    "rank1_distance": 0.10532152652740479,
+    "best_contradiction": 0.009725499898195267,
+    "best_entailment": 0.9995598196983337
+  },
+  {
+    "id": 21,
+    "claim": "Albuminuria is strongest known predictor for later diabetic nephropathy in people with type 1 diabetes.",
+    "gold_verdict": "REJECTED",
+    "rank1_distance": 0.18777334690093994,
+    "best_contradiction": 0.9994394183158875,
+    "best_entailment": 0.0032338369637727737
+  },
+  {
+    "id": 22,
+    "claim": "Diabetic Kidney Disease (DKD) is a rare complication of diabetes, occurring in only a small minority of patients.",
+    "gold_verdict": "REJECTED",
+    "rank1_distance": 0.10071200132369995,
+    "best_contradiction": 0.9997164607048035,
+    "best_entailment": 0.00037613717722706497
+  },
+  {
+    "id": 23,
+    "claim": "In heart transplant recipients, the presence of Cardiac Allograft Vasculopathy (CAV) and reduced MPR were associated with a favorable prognosis and lower risk of adverse events.",
+    "gold_verdict": "REJECTED",
+    "rank1_distance": 0.15136104822158813,
+    "best_contradiction": 0.9995335340499878,
+    "best_entailment": 0.0009623889345675707
+  },
+  {
+    "id": 24,
+    "claim": "High platelet group has 59.3% 5 year survival estimate. Normal platelet group has 38.2% 5 year survival estimate. Low platelet group has 67.5% 5 year survival estimate",
+    "gold_verdict": "REJECTED",
+    "rank1_distance": 0.15054821968078613,
+    "best_contradiction": 0.9996057152748108,
+    "best_entailment": 0.0020075689535588026
+  },
+  {
+    "id": 25,
+    "claim": "RACI shows no significant association with a history of COPD-related hospitalizations and is linked to enhanced exercise capacity.",
+    "gold_verdict": "REJECTED",
+    "rank1_distance": 0.0817950963973999,
+    "best_contradiction": 0.9993683695793152,
+    "best_entailment": 0.8954657912254333
+  },
+  {
+    "id": 26,
+    "claim": "Ozone rectal insufflation (O3-RI) has been shown to degrade lung function, increase inflammatory cell counts, and aggravate lung tissue inflammation.",
+    "gold_verdict": "REJECTED",
+    "rank1_distance": 0.2323840856552124,
+    "best_contradiction": 0.9995179176330566,
+    "best_entailment": 0.8726838231086731
+  },
+  {
+    "id": 27,
+    "claim": "Asthma, a common chronic inflammatory airway disease, affects 30 million people globally.",
+    "gold_verdict": "REJECTED",
+    "rank1_distance": 0.014680862426757812,
+    "best_contradiction": 0.9844890832901001,
+    "best_entailment": 0.9996739625930786
+  },
+  {
+    "id": 28,
+    "claim": "Ischemic stroke (IS), as a cerebrovascular disease caused by interrupted blood supply to the neurons, results in a low prevalence of disability and mortality worldwide.",
+    "gold_verdict": "REJECTED",
+    "rank1_distance": 0.012755811214447021,
+    "best_contradiction": 0.9994695782661438,
+    "best_entailment": 0.004471437074244022
+  },
+  {
+    "id": 29,
+    "claim": "Obstructive Sleep Apnea (OSA) affects 1 billion people globally, with a distinct female-to-male prevalence ratio of 2:1.",
+    "gold_verdict": "REJECTED",
+    "rank1_distance": 0.00951772928237915,
+    "best_contradiction": 0.8209971189498901,
+    "best_entailment": 0.980408787727356
+  },
+  {
+    "id": 30,
+    "claim": "RAGE interacts with DIAPH1 to suppress GTPase signaling and stabilize the cytoskeleton.",
+    "gold_verdict": "REJECTED",
+    "rank1_distance": 0.04500657320022583,
+    "best_contradiction": 0.9996169805526733,
+    "best_entailment": 0.04884856939315796
+  },
+  {
+    "id": 31,
+    "claim": "Diabetes rarely leads to diabetic foot ulcers and almost never results in amputation.",
+    "gold_verdict": "REJECTED",
+    "rank1_distance": 0.203707754611969,
+    "best_contradiction": 0.9997005462646484,
+    "best_entailment": 0.00023332754790317267
+  },
+  {
+    "id": 32,
+    "claim": "Chronic Obstructive Pulmonary Disease (COPD) is frequently overdiagnosed due to limited use and suboptimal quality of spirometry.",
+    "gold_verdict": "REJECTED",
+    "rank1_distance": 0.018997907638549805,
+    "best_contradiction": 0.9994286894798279,
+    "best_entailment": 0.013531753793358803
+  },
+  {
+    "id": 33,
+    "claim": "Chronic Obstructive Pulmonary Disease (COPD) is strongly associated with enhanced diaphragm efficiency and an increase in overall functional capacity.",
+    "gold_verdict": "REJECTED",
+    "rank1_distance": 0.09337770938873291,
+    "best_contradiction": 0.999698281288147,
+    "best_entailment": 0.00021869575721211731
+  },
+  {
+    "id": 34,
+    "claim": "Acute myocarditis is a purely mechanical disease characterized by myocardial inflammation and oedema.",
+    "gold_verdict": "REJECTED",
+    "rank1_distance": 0.15567511320114136,
+    "best_contradiction": 0.9995905756950378,
+    "best_entailment": 0.0001694221718935296
+  },
+  {
+    "id": 35,
+    "claim": "In asthma, bronchoconstriction significantly widens the airway, relieving pressure on the airway epithelium and preventing the activation of mechanotransduction.",
+    "gold_verdict": "REJECTED",
+    "rank1_distance": 0.17051559686660767,
+    "best_contradiction": 0.9996664524078369,
+    "best_entailment": 0.002078078221529722
+  },
+  {
+    "id": 36,
+    "claim": "Inhalation therapy plays only a minor, supplementary role in the standard treatment protocol for chronic obstructive pulmonary disease (COPD).",
+    "gold_verdict": "REJECTED",
+    "rank1_distance": 0.14273524284362793,
+    "best_contradiction": 0.9989504814147949,
+    "best_entailment": 0.0018965780036523938
+  },
+  {
+    "id": 37,
+    "claim": "Exposure to severe environmental heat is linked to a significantly decreased risk of acute cardiovascular events.",
+    "gold_verdict": "REJECTED",
+    "rank1_distance": 0.16597908735275269,
+    "best_contradiction": 0.9985382556915283,
+    "best_entailment": 0.9998225569725037
+  },
+  {
+    "id": 38,
+    "claim": "Patients hospitalized with acute decompensated heart failure (ADHF) face low mortality rates and a substantial decline in physical function afterward.",
+    "gold_verdict": "REJECTED",
+    "rank1_distance": 0.10965943336486816,
+    "best_contradiction": 0.9990012049674988,
+    "best_entailment": 0.96939617395401
+  },
+  {
+    "id": 39,
+    "claim": "Individuals who suffered a stroke demonstrated elevated white cell counts and elevated protein levels within their cerebrospinal fluid.",
+    "gold_verdict": "REJECTED",
+    "rank1_distance": 0.19672465324401855,
+    "best_contradiction": 0.9964157342910767,
+    "best_entailment": 0.0035515674389898777
+  },
+  {
+    "id": 40,
+    "claim": "Roughly 15% of the overall risk of developing coronary artery disease is driven by genetic predisposition.",
+    "gold_verdict": "REJECTED",
+    "rank1_distance": 0.11030828952789307,
+    "best_contradiction": 0.8854110240936279,
+    "best_entailment": 0.9931740164756775
+  },
+  {
+    "id": 41,
+    "claim": "Chronic constipation and prolonged straining during bowel movements are major mechanical risk factors for the development and exacerbation of hemorrhoids.",
+    "gold_verdict": "NOT_ENOUGH_INFO",
+    "rank1_distance": 0.5219526886940002,
+    "best_contradiction": 0.0004667060566134751,
+    "best_entailment": 0.00030807609437033534
+  },
+  {
+    "id": 42,
+    "claim": "Abruptly discontinuing long-term systemic steroid use can trigger potentially life-threatening acute adrenal insufficiency due to HPA axis suppression.",
+    "gold_verdict": "NOT_ENOUGH_INFO",
+    "rank1_distance": 0.32766151428222656,
+    "best_contradiction": 0.0009638521587476134,
+    "best_entailment": 0.9993665814399719
+  },
+  {
+    "id": 43,
+    "claim": "When the lower spinal canal narrows, it often causes noticeable leg pain while walking.",
+    "gold_verdict": "NOT_ENOUGH_INFO",
+    "rank1_distance": 0.44131046533584595,
+    "best_contradiction": 0.001062853028997779,
+    "best_entailment": 0.033339645713567734
+  },
+  {
+    "id": 44,
+    "claim": "Teeth cavities form when bacteria in the mouth turn sugar into acid that damages the tooth.",
+    "gold_verdict": "NOT_ENOUGH_INFO",
+    "rank1_distance": 0.3923231363296509,
+    "best_contradiction": 0.0009908992797136307,
+    "best_entailment": 0.9993507266044617
+  },
+  {
+    "id": 45,
+    "claim": "Cerebral palsy is a lifelong condition caused by early brain damage that impacts a person's movement and muscle control.",
+    "gold_verdict": "NOT_ENOUGH_INFO",
+    "rank1_distance": 0.3549227714538574,
+    "best_contradiction": 0.0020155145321041346,
+    "best_entailment": 0.5619551539421082
+  },
+  {
+    "id": 46,
+    "claim": "Down syndrome is a genetic condition caused by having an extra copy of chromosome 21, which affects how a child develops.",
+    "gold_verdict": "NOT_ENOUGH_INFO",
+    "rank1_distance": 0.32451164722442627,
+    "best_contradiction": 0.0002644215419422835,
+    "best_entailment": 0.9998313188552856
+  },
+  {
+    "id": 47,
+    "claim": "An ingrown hair occurs when a hair curls back or grows sideways into the skin, frequently resulting in localized inflammation, pain, and the formation of small, itchy bumps.",
+    "gold_verdict": "NOT_ENOUGH_INFO",
+    "rank1_distance": 0.48195457458496094,
+    "best_contradiction": 0.008659308776259422,
+    "best_entailment": 0.9997462630271912
+  },
+  {
+    "id": 48,
+    "claim": "Sexually transmitted diseases often present no noticeable symptoms in their early stages, frequently leading to undiagnosed infections and unintended transmission.",
+    "gold_verdict": "NOT_ENOUGH_INFO",
+    "rank1_distance": 0.4350694417953491,
+    "best_contradiction": 0.001173097174614668,
+    "best_entailment": 0.37093204259872437
+  },
+  {
+    "id": 49,
+    "claim": "Achieving a high degree of HLA matching between a donor and recipient is critical in bone marrow transplantation to prevent life-threatening graft-versus-host disease.",
+    "gold_verdict": "NOT_ENOUGH_INFO",
+    "rank1_distance": 0.32039451599121094,
+    "best_contradiction": 0.9912623167037964,
+    "best_entailment": 0.008588950149714947
+  },
+  {
+    "id": 50,
+    "claim": "Impacted wisdom teeth that fail to fully emerge through the gums can cause pain, swelling, and misalignment of nearby teeth.",
+    "gold_verdict": "NOT_ENOUGH_INFO",
+    "rank1_distance": 0.4128710627555847,
+    "best_contradiction": 0.053549688309431076,
+    "best_entailment": 0.7249571681022644
+  }
+]
