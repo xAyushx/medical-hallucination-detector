@@ -1,27 +1,14 @@
-# FIX THE PROMPT##****
-
-
-
-
-
-
-
-
-
-
-
-
 # Medical Hallucination Detector
 
-A GenAI system that detects factual hallucinations in LLM-generated medical text using retrieval-augmented verification — not a general-purpose RAG chatbot, but a fact-checking pipeline purpose-built for catching subtly wrong medical claims before they reach a user.
+A GenAI system that catches factual hallucinations in LLM-generated (or any)medical text using retrieval-augmented verification. Not a general-purpose RAG chatbot — a fact-checking pipeline purpose-built for catching subtly wrong medical claims before they reach a user.
 
 ## What it does
 
 Given a piece of LLM-generated (or any) medical text, the system:
-1. Decomposes it into atomic, independently-checkable factual claims
-2. Retrieves relevant evidence for each claim from a curated PubMed corpus
-3. Verifies each claim against that evidence, producing a verdict: **Supported**, **Refuted**, or **Not Enough Info**
-4. Returns each verdict with its supporting/contradicting evidence and source citation (PMID)
+1. Breaks it down into atomic, independently-checkable factual claims
+2. Retrieves relevant evidence for each claim from a PubMed corpus
+3. Verifies each claim against that evidence and produces a verdict — **Supported**, **Rejected**, or **Not Enough Info**
+4. Returns the verdict along with the evidence and source citation (PMID)
 
 ## Architecture
 
@@ -38,116 +25,121 @@ Retrieval (PubMedBERT embeddings + ChromaDB, cosine similarity)
 Verification (BiomedBERT NLI: entailment / contradiction / neutral)
         |
         v
-Aggregation (safety-first: any contradiction -> Refuted)
+Aggregation (safety-first: strong contradiction -> Rejected)
         |
         v
 Verdict + Evidence + Citation
 ```
 
-Served via a FastAPI backend (`/verify` endpoint) with a Streamlit demo UI.
+Demoed through a Streamlit UI.
 
-## Tech Stack
+## Tech stack
 
 | Component | Tool | Why |
 |---|---|---|
-| Claim extraction | Llama 3.1 8B (Ollama) | Local, free, sufficient for structured few-shot decomposition |
-| Embeddings | `NeuML/pubmedbert-base-embeddings` (768-dim) | Domain-specific; empirically verified sharper separation between related/unrelated medical content vs. general-purpose models (see Design Decisions) |
-| Vector store | ChromaDB (persistent, cosine space) | Binds vector + text + metadata as one unit — essential for citation/provenance, which FAISS does not natively support |
-| Verification | BiomedBERT (NLI-finetuned) | *(planned — checkpoint TBD)* |
-| Backend | FastAPI | Simple, standard REST serving |
-| Frontend | Streamlit | Fast to build a demo UI |
-| Ingestion | Raw `requests` + `xml.etree.ElementTree` | No Biopython — avoids bioinformatics-framework bloat for what's fundamentally HTTP + XML parsing; demonstrates real retry/rate-limit engineering |
-| Sentence segmentation | `pysbd` | Rule-based, purpose-built; regex-based splitting failed on real-world medical text edge cases (decimals, abbreviations, genus names) |
+| Claim extraction | Llama 3.1 8B (Ollama) | Local, free, good enough for structured few-shot decomposition |
+| Embeddings | `NeuML/pubmedbert-base-embeddings` (768-dim) | Domain-specific — empirically gives sharper separation between related and unrelated medical content than general-purpose embedding models |
+| Vector store | ChromaDB (persistent, cosine space) | Binds vector + text + metadata together — needed for citing sources, which FAISS doesn't natively support |
+| Verification | `pritamdeka/PubMedBERT-MNLI-MedNLI` | Trained on both general MNLI and medical-specific MedNLI (real clinical notes), not just a biomedical-sounding base model |
+| Frontend | Streamlit | Fast to build a working demo UI |
+| Ingestion | Raw `requests` + `xml.etree.ElementTree` | No Biopython — this is fundamentally HTTP + XML parsing, and doing it raw meant actually building retry logic and rate-limiting myself rather than hiding it behind a framework |
+| Sentence segmentation | `pysbd` | Rule-based, purpose-built for this problem — regex splitting kept breaking on real medical text (decimals, abbreviations, genus names) |
 
-**Deliberately not used**: LangChain (pipeline is fixed and well-understood; raw implementation keeps every design decision explainable), Biopython (see above).
+**Deliberately not used**: LangChain (the pipeline is a fixed, well-understood sequence — a raw implementation keeps every design decision explainable) and Biopython (see above).
 
 ## Corpus
 
-~4,300 sentence-level chunks from PubMed abstracts across three conditions:
-- Cardiovascular diseases
-- Diabetes mellitus
-- Asthma
+~155,000 sentence-level chunks from PubMed abstracts across seven conditions: diabetes, hypertension, heart failure, coronary artery disease, stroke, asthma, and COPD.
 
-Sourced via NCBI E-utilities (`esearch` + `efetch`), English-only, last ~10 years, deduplicated across overlapping condition searches.
+Sourced via NCBI E-utilities (`esearch` + `efetch`), English-only, last ~25 years (wide enough to catch foundational drug facts that recent papers don't bother restating, narrow enough to avoid outdated standards of care), with a separate pass specifically pulling review articles — reviews are far more likely to restate established mechanisms than primary research papers, which mostly report novel findings. Deduplicated by PMID, with condition tags merged (not dropped) for articles that span multiple conditions.
 
-**Why only 3 conditions, not all of PubMed**: a deliberately scoped corpus allows personal validation of every source abstract and a rigorous hand-labeled evaluation set — both of which don't scale to millions of documents. The pipeline architecture itself is corpus-agnostic; scaling to more conditions requires adding ingestion queries, not redesigning the system.
+The corpus started smaller (3 conditions, ~4,300 chunks) and was expanded after testing surfaced real coverage gaps — see Known Limitations for what that testing found and fixed.
 
 ## Evaluation
 
-A 50-example gold-labeled evaluation set (hand-written and hand-verdicted against source abstracts) is used to measure pipeline accuracy independently of the pipeline's own outputs. Metrics are split into **retrieval accuracy** (was the correct evidence found?) and **verification accuracy** (given correct evidence, was the verdict right?) to isolate where errors originate, rather than reporting a single opaque end-to-end number.
+Accuracy is measured against a 50-claim gold set I hand-built and hand-labeled myself: 20 true claims reworded from real corpus sentences, 20 false claims built by flipping one specific, plausible detail in a true claim (a number, a direction, an entity), and 10 "not enough info" claims about conditions outside the corpus, each verified absent via keyword search before being included.
 
-*(Status: eval set and metrics pending — see Known Limitations / Project Status)*
+### Results
 
-## Known Limitations
-### Corpus is biased toward novel findings, underrepresenting foundational drug facts
-Verified empirically: searching the corpus for chunks mentioning "metformin" alongside "hepatic" or "glucose production" — metformin's textbook primary mechanism — returned **zero results**, despite metformin being the most commonly prescribed type 2 diabetes drug. The corpus was built from recent (last ~10 years) PubMed abstracts, which tend to report *novel* findings (new drug trials, mechanism studies on newer compounds, real-world outcome studies) rather than restate long-established textbook facts about older, well-studied drugs. As a result, retrieval performs well for claims about recent/novel research findings but is comparatively weak at verifying basic, foundational drug facts — arguably the most common type of claim a general medical Q&A system would actually need to check. This mirrors an earlier finding (see montelukast example above): even when a drug is mentioned in the corpus, coverage often skews toward a specific angle (e.g., regulatory/statistical) rather than the therapeutic-mechanism angle most claims are about.
+```
+                 precision  recall  f1-score  support
+SUPPORTED           1.00     0.85     0.92       20
+REJECTED            0.87     1.00     0.93       20
+NOT_ENOUGH_INFO     1.00     1.00     1.00       10
+accuracy                              0.94       50
+```
 
-**Planned improvement**: broaden the ingestion query strategy — e.g., explicitly including PubMed review articles or pharmacology-focused MeSH terms (e.g., "Metformin/pharmacology") alongside the current treatment-outcome-focused queries — to better capture foundational/mechanistic content, not just recent novel findings. Not implemented in the current version due to placement timeline constraints; documented here as a known, deliberate scoping tradeoff rather than an unnoticed gap.
-### Retrieval can favor topical pattern-matching over named-entity precision
-Embedding-based semantic search compares overall sentence meaning, not keyword overlap. As a result, retrieval can occasionally surface evidence about the *wrong* drug or entity if it shares a strong topical/structural similarity with the claim (e.g., "Corticosteroids treat asthma" scoring higher than "FDA issued a boxed warning for montelukast" for the claim "Montelukast is used to control asthma" — despite the second chunk being the one that actually mentions the drug in question). This happens when the corpus lacks strong on-topic (therapeutic-description) coverage for the specific entity named in a claim, even if other coverage of that entity exists (e.g., regulatory/statistical content). Verified empirically by directly comparing cosine similarity scores between a test claim and known entity-specific chunks vs. the chunks actually retrieved.
+100% recall on REJECTED — every real hallucination in the gold set was caught, none slipped through. 100% on NOT_ENOUGH_INFO — the retrieval cutoff correctly flagged every claim with no genuinely relevant evidence in the corpus. All 3 errors went the same direction: true claims wrongly flagged as REJECTED, which is the expected cost of a threshold deliberately set to catch hallucinations aggressively (more on that below).
 
-### Retrieval does not detect negation or truth value
-Embedding similarity captures topical relevance, not factual correctness. A claim that negates a true fact (e.g., "Asthma is *not* a chronic disease...") can still retrieve the correct supporting evidence as a top match, since the embedding model has no mechanism for distinguishing assertion from negation at the semantic-similarity level. This is by design in this architecture — negation and truth-value judgment are the explicit responsibility of the downstream NLI verification stage, not retrieval. Retrieval's job is to find topically relevant evidence; verification's job is to judge whether that evidence supports or contradicts the claim.
+### How the thresholds were actually chosen
 
-### Claim extraction occasionally produces near-duplicate or inconsistently-granular claims
-LLM-based claim decomposition does not always produce claims at a fully consistent level of atomicity — observed failure modes include: appending a generic causal restatement as a separate "claim" alongside the specific fact it follows from, fragmenting a single fact (e.g., dose amount + frequency) into incomplete pieces, and producing two claims that paraphrase the same underlying fact. Prompt refinements reduced but did not eliminate these cases. A planned refinement is a post-processing deduplication/consistency step rather than continuing to patch the prompt indefinitely.
+```
+DISTANCE_CUTOFF = 0.3          # retrieval relevance cutoff
+CONTRADICTION_THRESHOLD = 0.8  # deliberately low
+ENTAILMENT_THRESHOLD = 0.9
+```
 
-### Corpus scope is deliberately limited to 3 conditions
-The evidence corpus covers cardiovascular disease, diabetes, and asthma only (~4,300 sentence-level chunks from ~150 PubMed abstracts per condition), not all of PubMed or all medical conditions. This is a deliberate scoping decision to allow personal validation of the corpus and a hand-labeled evaluation set, not a claim that the system generalizes to arbitrary medical domains. Even within a covered condition, topical coverage can be uneven — e.g., a specific drug may be present in the corpus but discussed only from a regulatory/statistical angle rather than a therapeutic-mechanism angle, limiting retrieval quality for claims about that drug's clinical use.
+These came from looking at the real data, not guessing:
 
-## Design Insight: Verification and Claim Extraction Have a Load-Bearing Dependency
+- **Distance cutoff**: sorting retrieval distances by gold verdict showed a clean gap — every SUPPORTED/REJECTED claim had a top match under ~0.28, every NOT_ENOUGH_INFO claim's top match was above ~0.32. 0.3 sits in that gap.
+- **Contradiction threshold**: REJECTED claims' contradiction scores clustered at 0.98+, with one exception (a claim where both contradiction and entailment fired high simultaneously — a distinct failure mode, not a threshold problem). SUPPORTED claims' contradiction scores clustered near 0, with two exceptions traced to specific NLI weaknesses below. 0.8 catches essentially every real hallucination without adding new false positives beyond those two known cases.
+- **Why contradiction is checked first, and why the threshold is loose (0.8) rather than strict**: I had to pick which failure mode to favor — a true claim getting wrongly flagged, or a hallucination slipping through unflagged. In a medical context the second one is worse, so the rule is deliberately biased toward catching contradictions even at the cost of a few false rejections.
+- These thresholds were then run against the real pipeline output (not simulated) to get the confusion matrix and metrics above.
 
-During NLI verification testing (`pritamdeka/PubMedBERT-MNLI-MedNLI`), a negation case initially appeared to fail: the claim "Asthma is not a chronic respiratory disease but affects over 230 million people" was judged as **entailment (99.96%)** against evidence stating asthma *is* a chronic respiratory disease affecting over 230 million people — the opposite of the correct verdict (contradiction).
+**Caveat worth being upfront about**: these thresholds were tuned and evaluated on the same 50 examples, which risks overfitting to them. With only 50 labeled claims split across 3 classes, a proper held-out validation split wasn't really practical — each half would be too small to trust. So this shows the approach is sound and grounded in real signal, not that these exact numbers are provably optimal.
 
-Isolated testing traced the cause: the NLI model handles negation correctly and reliably when given a properly atomic claim (verified on multiple simple negation pairs, e.g., "Aspirin causes stomach irritation" vs. "Aspirin does not cause stomach irritation" → 99.91% contradiction, correctly identified). The failure only occurred with a **compound claim** — one negated clause ("not a chronic disease") joined to a second, true, unnegated clause ("but affects over 230 million people") via "but." Testing the negated clause alone against the same evidence produced the correct contradiction verdict (99.92%).
+**Why only 50 examples**: hand-labeling doesn't parallelize for a solo project — each claim means reading the real source, writing a genuine (not copy-pasted) rewording, constructing a plausible single-detail flip, and personally verifying the label. Farming this out to an LLM would defeat the point, since the whole value of a gold set is an independent, human-checked ground truth. A production system would want hundreds or thousands of examples, ideally labeled by multiple people with agreement checks — that's a team task, not something to force through solo alongside building the rest of the system. 50 was the largest set I could build and personally verify with real confidence in the time available.
 
-**Conclusion**: this was not an NLI model weakness, but a symptom of a non-atomic claim reaching the verification stage. This confirms that claim extraction's atomicity requirement (Phase 3) is not merely a formatting preference — it is a **load-bearing precondition** for verification to function correctly. A compound claim slipping through extraction can silently produce an incorrect verdict at verification, even with a well-performing NLI model. This is a specific, tested example of why the pipeline's stages are interdependent rather than independently correct: verification's reliability assumes claim extraction has already done its job properly, and a bug in one stage can manifest as an apparent failure in a downstream stage.
-## Project Status
+### The 3 misclassifications, each traced to a specific cause
 
-- [x] Corpus ingestion (PubMed, 3 conditions, cleaned and deduplicated)
-- [x] Embeddings + vector storage (ChromaDB, cosine space, ~4,300 chunks)
-- [x] Retrieval validated (positive and negative test queries)
-- [x] Claim extraction (Llama 3.1 8B, few-shot prompted, iteratively refined)
-- [ ] Claim extraction wired to retrieval end-to-end
-- [ ] NLI verification (BiomedBERT)
-- [ ] Full pipeline aggregation logic
-- [ ] Hand-labeled gold evaluation set (50 examples)
-- [ ] Evaluation metrics (precision/recall/F1, retrieval vs. verification error split)
-- [ ] FastAPI backend
-- [ ] Streamlit frontend
+1. **Contrast-conjunction evidence throws NLI off.** The correct evidence sentence contained a "but" clause introducing unrelated content (e.g., "...is the best predictor... **but** it is often induced by arterial hypertension..."). NLI gave this 99.9% contradiction despite the claim being genuinely supported — it seems to weight the contrast word itself over the actual semantic relationship.
+2. **Reordered multi-fact claims confuse NLI.** A claim restating three grouped statistics (high/normal/low platelet survival rates) in a different order than the source's single "respectively"-style sentence was scored 99.96% contradiction despite being factually identical — NLI didn't correctly re-derive which number belonged to which group.
+3. **Simultaneous high contradiction and entailment.** One claim scored ~0.999 on both contradiction and entailment against its evidence at once — an apparent confidence failure on ambiguous phrasing. The safety-first rule (contradiction checked first) resolved it as REJECTED, which happened to be wrong here but is the correct general policy.
+
+All three are NLI limitations, not retrieval or aggregation bugs — the right evidence was retrieved every time, and the aggregation logic did exactly what it was designed to do given the probabilities it received. Being able to say precisely which pipeline stage owns each failure is only possible because retrieval and verification are separated with inspectable output at every step, rather than being one opaque call.
+
+## Known limitations
+
+**Claim extraction can silently drop negated clauses in compound sentences.** Given "Asthma is not a chronic disease but affects over 230 million people," extraction produced only one claim — the negated half was discarded entirely, not just merged or mis-split. This is a correctness gap, not just a style issue: if a hallucinated claim is embedded in a "not X, but Y" structure, the false part may never even reach verification, producing a false "no issue found." Root cause is that the extraction prompt has no rule or example for contrast-conjunction structures. Unresolved — deferred given timeline, not fixed silently.
+
+**Retrieval doesn't detect negation or truth value.** A claim that negates a true fact can still retrieve the correct supporting evidence as its top match, since embedding similarity captures topic, not correctness. This is by design — negation/truth judgment is verification's job, not retrieval's. Retrieval finds what's topically relevant; NLI decides whether it agrees or disagrees.
+
+**Retrieval can favor topical pattern-matching over the actual named entity.** For "Montelukast is used to control asthma," a chunk about corticosteroids (a different drug entirely) scored higher than chunks that actually mention montelukast, because the corpus's montelukast content is mostly about FDA warnings and prescription rates rather than its therapeutic use, and the corticosteroid sentence happened to match the claim's overall shape more closely. The same pattern showed up with ibuprofen: the top-3 retrieved chunks were all generic analgesic content, missing 8 chunks in the corpus that specifically discuss ibuprofen. Embedding similarity weighs overall sentence pattern more than it guarantees the exact entity is covered.
+
+**NLI can misjudge a more specific or hedged evidence sentence as contradicting a general claim.** A general claim about inhaled corticosteroids being the standard maintenance therapy for asthma was rejected against evidence that actually supports it, just with more clinical detail (specific drug combinations, specific patient subgroups). The evidence isn't disagreeing — it's a more detailed version of the same fact — but NLI treated the difference in specificity as if it were a difference in truth.
+
+**Claim extraction occasionally produces near-duplicate or inconsistently-sized claims.** Sometimes it splits one fact into incomplete fragments (dose separated from frequency), sometimes it appends a generic restatement of a claim's consequence as if it were a second, independent claim, and sometimes it just paraphrases the same fact twice. Prompt refinements reduced this but didn't eliminate it. A cleaner fix would be a post-processing dedup/consistency pass rather than continuing to patch the prompt indefinitely.
+
+**Corpus coverage is uneven even within a covered condition.** Recent PubMed abstracts mostly report novel findings, not textbook facts — early testing found zero chunks connecting metformin to its own basic mechanism (reducing hepatic glucose production), despite metformin being the most prescribed type 2 diabetes drug. Widening the date range and adding a review-article-specific search pass fixed this for at least the cases directly tested (montelukast, sinomenine) — but it's a mitigation, not a guarantee the gap is fully closed everywhere.
+
+**The whole thing runs locally and isn't deployable as a public service as-is**, because claim extraction depends on Ollama running on this machine. Making it a real hosted service would mean either running Ollama on a GPU cloud instance (real, ongoing infrastructure cost) or swapping in a hosted LLM API for claim extraction (a straightforward code change, but one that introduces a per-request cost instead of running for free locally). Neither was done here, on purpose, to keep the project's total cost at zero.
+
+## A pattern worth naming
+
+Several of the limitations above share the same shape: claim extraction, retrieval, and NLI can each behave "correctly" in isolation and still produce a wrong final verdict, depending on the syntactic shape of the input — a stray conjunction, a reordered list, a claim that's more specific than its evidence. Atomicity and structural alignment turn out to be load-bearing assumptions the pipeline doesn't fully guarantee on its own. The clearest example: a compound negated claim was initially judged as entailment by NLI, which looked like an NLI bug — but testing the negated clause alone against the same evidence gave the correct answer (99.92% contradiction). The NLI model was fine; the claim reaching it wasn't atomic. Verification's reliability turns out to depend on claim extraction having already done its job, not just on NLI being accurate.
+
+## Project status
+
+- [x] Corpus ingestion — 7 conditions, cleaned, deduplicated, condition tags merged for cross-listed articles
+- [x] Embeddings + vector storage — ChromaDB, cosine space, ~155k chunks
+- [x] Retrieval, validated against known-good and known-bad queries
+- [x] Claim extraction — Llama 3.1 8B, few-shot, iteratively refined
+- [x] NLI verification — has its own documented limitations, see above
+- [x] Aggregation logic — thresholds derived from the gold set, not guessed
+- [x] 50-example hand-labeled gold set
+- [x] Evaluation metrics — precision/recall/F1, every error individually root-caused
+- [x] Streamlit frontend
+- [ ] Not deployed as a public service (see limitations)
 
 ## Setup
 
 ```bash
 python -m venv venv
-venv\Scripts\activate  # Windows
+venv\Scripts\activate
 
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126  # or appropriate CUDA build
-pip install sentence-transformers pysbd requests chromadb fastapi uvicorn streamlit pandas scikit-learn
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cu126  # or the CUDA build matching your GPU
+pip install sentence-transformers pysbd requests chromadb streamlit pandas scikit-learn
 
-# Install Ollama separately from ollama.com, then:
+# Ollama installed separately from ollama.com, then:
 ollama pull llama3.1:8b
-```
-
-## Repository Structure
-
-```
-medical-hallucination-detector/
-├── data/
-│   ├── pubmed_raw.jsonl        # frozen raw abstract snapshot
-│   └── pubmed_chunks.jsonl     # cleaned, chunked corpus
-├── chroma_db/                  # persistent vector store
-├── src/
-│   ├── ingestion_pubmed.py     # Phase 1: corpus ingestion
-│   ├── build_chroma_index.py   # Phase 2: embeddings + storage
-│   ├── claim_extraction.py     # Phase 3: LLM claim decomposition
-│   ├── nli_verification.py     # Phase 4: BiomedBERT verification (planned)
-│   └── pipeline.py             # Full pipeline wiring (planned)
-├── eval/
-│   ├── gold_labels.jsonl       # hand-labeled eval set (planned)
-│   └── run_eval.py             # evaluation script (planned)
-├── api/
-│   └── main.py                 # FastAPI backend (planned)
-├── app.py                      # Streamlit frontend (planned)
-└── README.md
 ```
