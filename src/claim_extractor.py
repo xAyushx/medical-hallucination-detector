@@ -1,6 +1,6 @@
 import json
 import requests
-
+import time
 OLLAMA_URL = "http://localhost:11434/api/generate"
 MODEL = "llama3.1:8b"
 
@@ -86,27 +86,20 @@ Paragraph:
 """
 
 
-def extract_claims(paragraph):
-
+def extract_claims(paragraph, max_retries=2):
     prompt = PROMPT.format(paragraph=paragraph)
+    payload = {"model": MODEL, "prompt": prompt, "stream": False, "format": "json"}
 
-    payload = {
-        "model": MODEL,
-        "prompt": prompt,
-        "stream": False,
-        "format": "json"
-    }
-
-    response = requests.post(
-        OLLAMA_URL,
-        json=payload,
-        timeout=120
-    )
-
-    response.raise_for_status()
-
-    result = response.json()
-
-    claims = json.loads(result["response"])["claims"]
-
-    return claims
+    last_err = None
+    for attempt in range(max_retries + 1):
+        try:
+            response = requests.post(OLLAMA_URL, json=payload, timeout=120)
+            response.raise_for_status()
+            result = response.json()
+            return json.loads(result["response"])["claims"]
+        except Exception as e:
+            last_err = e
+            if attempt < max_retries:
+                time.sleep(1.5)
+                continue
+    raise RuntimeError(f"Ollama request failed after {max_retries + 1} attempts: {last_err}")
