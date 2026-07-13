@@ -1,9 +1,5 @@
-# Thresholds calibrated via Phase 7 gold-set evaluation (50 claims), real data-derived,
-# not guessed placeholders. See README for full reasoning.
-#
 # DISTANCE_CUTOFF: real gap in gold data between SUPPORTED/REJECTED (max ~0.28) and
 # NOT_ENOUGH_INFO (min ~0.32) rank-1 distances.
-#
 # CONTRADICTION_THRESHOLD: chosen low (0.8) deliberately, prioritizing catching real
 # hallucinations (REJECTED) over avoiding occasional false-rejection of true claims —
 # a documented, deliberate safety-first tradeoff. Catches 19/20 gold REJECTED claims;
@@ -15,9 +11,7 @@
 # via the contradiction branch instead, due to a documented NLI weakness where
 # evidence containing a contrast conjunction ("but"/"yet") sometimes triggers high
 # contradiction despite the claim being factually supported.
-#
-# This project is not production-grade; known, understood, documented error cases
-# remain rather than being chased indefinitely, consistent with project scope.
+
 
 DISTANCE_CUTOFF = 0.3
 CONTRADICTION_THRESHOLD = 0.8
@@ -47,7 +41,7 @@ def getresult(nli_results):
     else:
         return {"verdict": "NOT_ENOUGH_INFO", "pmid": None, "evidence_text": None,
                 "reason": f"refute={refute:.4f}, support={support:.4f} - inconclusive"}
-#................................#
+#................................   TESTING    ..........................................#
 # import json
 
 # path = "eval/raw_eval_results.json"
